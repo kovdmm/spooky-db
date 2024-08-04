@@ -1,5 +1,5 @@
 {
-  "version": "3810",
+  "version": "3811",
   "units": [
     {
       "Categories": [
@@ -516,7 +516,7 @@
       "LifeBarSize": 0.5,
       "StrategicIconName": "icon_land1_engineer",
       "LifeBarOffset": 0.2,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "CollisionOffsetZ": -0.1,
       "Economy": {
         "TeleportMassMod": 1,
@@ -634,7 +634,7 @@
         "MassMult": 0.9
       },
       "SizeX": 0.7,
-      "SizeY": 0.8,
+      "SizeY": 0.925,
       "SelectionCenterOffsetZ": -0.1,
       "SelectionSizeZ": 0.4,
       "SelectionThickness": 0.95,
@@ -1350,7 +1350,7 @@
         "MassMult": 0.9
       },
       "SizeX": 0.6,
-      "SizeY": 0.9,
+      "SizeY": 1,
       "SelectionSizeZ": 0.4,
       "Physics": {
         "MeshExtentsX": 1.25,
@@ -1368,7 +1368,7 @@
         "MeshExtentsZ": 1.25
       },
       "SelectionThickness": 1,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "Display": {
         "UniformScale": 0.02,
         "Abilities": [
@@ -4102,7 +4102,7 @@
         "KTurnDamping": 2,
         "CirclingElevationChangeRatio": 0.25,
         "TransportHoverHeight": 4,
-        "MaxAirspeed": 10
+        "MaxAirspeed": 10.75
       },
       "Defense": {
         "ArmorType": "Light",
@@ -8050,7 +8050,7 @@
           "Cue": "UEL0208_Move_Start"
         }
       },
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "Id": "UEL0208",
       "Wreckage": {
         "EnergyMult": 0,
@@ -8066,7 +8066,7 @@
         "MassMult": 0.9
       },
       "SizeX": 0.7,
-      "SizeY": 0.9,
+      "SizeY": 1.025,
       "SelectionCenterOffsetZ": -0.1,
       "SelectionThickness": 0.8,
       "Intel": {
@@ -8273,7 +8273,7 @@
       "SelectionThickness": 0.7,
       "SelectionSizeX": 0.45,
       "SizeZ": 0.8,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "Defense": {
         "ArmorType": "Normal",
         "SurfaceThreatLevel": 3,
@@ -8356,7 +8356,7 @@
         "MassMult": 0.9
       },
       "SizeX": 0.7,
-      "SizeY": 1,
+      "SizeY": 1.125,
       "SelectionSizeZ": 0.6,
       "Intel": {
         "JammerBlips": 8,
@@ -10022,9 +10022,9 @@
         "VisionRadius": 32
       },
       "SizeX": 0.6,
-      "SizeY": 0.8,
+      "SizeY": 0.925,
       "SelectionSizeZ": 1.3,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "Veteran": {
         "Level2": 8,
         "Level3": 12,
@@ -12192,7 +12192,7 @@
         "KTurnDamping": 2,
         "CirclingElevationChangeRatio": 0.25,
         "TransportHoverHeight": 4,
-        "MaxAirspeed": 13.5
+        "MaxAirspeed": 14.5
       },
       "Defense": {
         "ArmorType": "Light",
@@ -13831,10 +13831,10 @@
         "MeshExtentsZ": 12
       },
       "SizeX": 1.575,
-      "SizeY": 1.2,
+      "SizeY": 1.325,
       "SelectionSizeZ": 2.7,
       "SelectionThickness": 0.2,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "Intel": {
         "VisionRadius": 32
       },
@@ -17238,10 +17238,10 @@
         "MassMult": 0.9
       },
       "SelectionSizeX": 0.9,
-      "SizeY": 1.5,
+      "SizeY": 1.7,
       "SelectionSizeZ": 0.9,
       "SelectionThickness": 0.47,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "SizeX": 1,
       "Display": {
         "UniformScale": 0.15,
@@ -17863,7 +17863,7 @@
         "MassMult": 0.9
       },
       "SizeX": 1,
-      "SizeY": 1,
+      "SizeY": 1.1,
       "SelectionSizeZ": 0.55,
       "Physics": {
         "MeshExtentsX": 1.25,
@@ -17881,7 +17881,7 @@
         "MeshExtentsZ": 1.25
       },
       "SelectionThickness": 0.7,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "Display": {
         "UniformScale": 0.02,
         "Abilities": [
@@ -19324,7 +19324,7 @@
           "Cue": "UEL0309_Move_Start"
         }
       },
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "Id": "UEL0309",
       "Wreckage": {
         "EnergyMult": 0,
@@ -19340,7 +19340,7 @@
         "MassMult": 0.9
       },
       "SizeX": 0.85,
-      "SizeY": 0.9,
+      "SizeY": 1.025,
       "SelectionCenterOffsetZ": -0.1,
       "SelectionThickness": 0.64,
       "Intel": {
@@ -25606,7 +25606,7 @@
         "CirclingTurnMult": 1,
         "KTurn": 2,
         "CirclingRadiusChangeMinRatio": 0.3,
-        "MaxAirspeed": 15,
+        "MaxAirspeed": 17.5,
         "LiftFactor": 7,
         "CirclingRadiusChangeMaxRatio": 0.4,
         "CirclingElevationChangeRatio": 0.25,
@@ -28301,9 +28301,9 @@
         "ReactivateTime": 6
       },
       "SizeX": 1,
-      "SizeY": 1.1,
+      "SizeY": 1.2,
       "SelectionSizeZ": 0.65,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "Veteran": {
         "Level2": 32,
         "Level3": 48,
@@ -29214,7 +29214,7 @@
           "UEL0401"
         ]
       },
-      "SizeX": 5.5,
+      "SizeX": 5.2,
       "LifeBarSize": 5.75,
       "BuildIconSortPriority": 10,
       "Physics": {
@@ -29249,22 +29249,22 @@
         "WaterVisionRadius": 32,
         "VisionRadius": 32
       },
-      "SizeZ": 8,
+      "SizeZ": 7.5,
       "VeteranMassMult": 0.5,
       "Defense": {
         "ArmorType": "Experimental",
         "Shield": {
           "ShieldEnergyDrainRechargeTime": 5,
-          "ShieldSize": 25,
+          "ShieldSize": 24,
           "ShieldMaxHealth": 20000,
           "MeshZ": "/effects/entities/Shield01/Shield01z_mesh",
           "ShieldRegenStartTime": 1,
           "ShieldSpillOverDamageMod": 0,
-          "ShieldRegenRate": 100,
+          "ShieldRegenRate": 200,
           "RegenAssistMult": 60,
           "ImpactEffects": "UEFShieldHit01",
           "ShieldVerticalOffset": -7,
-          "ShieldRechargeTime": 120,
+          "ShieldRechargeTime": 75,
           "Mesh": "/effects/entities/Shield01/Shield01_mesh",
           "ImpactMesh": "/effects/entities/ShieldSection01/ShieldSection01_mesh"
         },
@@ -29359,7 +29359,7 @@
         "MassMult": 0.9
       },
       "SelectionSizeX": 4,
-      "SizeY": 1.5,
+      "SizeY": 1.4,
       "SelectionCenterOffsetZ": -0.3,
       "ExternalFactory": {
         "SelectionSizeZ": 2,
@@ -29376,7 +29376,7 @@
       },
       "StrategicIconName": "icon_experimental_generic",
       "Display": {
-        "UniformScale": 0.22,
+        "UniformScale": 0.215,
         "Abilities": [
           "Air Staging",
           "Amphibious",
@@ -29708,7 +29708,7 @@
               "RackBone": "Turret_Right_AA_Barrel"
             }
           ],
-          "Damage": 20,
+          "Damage": 40,
           "DamageType": "Normal",
           "Audio": {
             "Fire": {
@@ -29734,7 +29734,7 @@
             "AIR MOBILE",
             "ALLUNITS"
           ],
-          "MaxRadius": 45,
+          "MaxRadius": 55,
           "ProjectileId": "/projectiles/TAARailgun01/TAARailgun01_proj.bp",
           "Label": "RightAAGun",
           "MuzzleVelocity": 90,
@@ -31460,7 +31460,7 @@
         "Classification": "RULEUC_Engineer"
       },
       "LifeBarOffset": 0.25,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "Economy": {
         "TeleportMassMod": 1,
         "StorageMass": 10,
@@ -31574,7 +31574,7 @@
         "MassMult": 0.9
       },
       "SizeX": 0.7,
-      "SizeY": 0.8,
+      "SizeY": 0.925,
       "SelectionSizeZ": 0.4,
       "SelectionThickness": 0.95,
       "BuildBotTotal": 1,
@@ -35137,7 +35137,7 @@
         "KTurnDamping": 2,
         "CirclingElevationChangeRatio": 0.25,
         "TransportHoverHeight": 4,
-        "MaxAirspeed": 10
+        "MaxAirspeed": 10.75
       },
       "Defense": {
         "ArmorType": "Light",
@@ -38906,11 +38906,11 @@
         "MassMult": 0.9
       },
       "SelectionSizeX": 0.4,
-      "SizeY": 0.6,
+      "SizeY": 0.725,
       "SelectionSizeZ": 0.4,
       "SizeX": 0.5,
       "SelectionThickness": 1,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "Display": {
         "UniformScale": 0.125,
         "Abilities": [
@@ -39260,7 +39260,7 @@
       "LifeBarSize": 0.75,
       "StrategicIconName": "icon_land2_engineer",
       "LifeBarOffset": 0.3,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "General": {
         "CommandCaps": {
           "RULEUCC_Repair": true,
@@ -39402,7 +39402,7 @@
         "MassMult": 0.9
       },
       "SizeX": 0.7,
-      "SizeY": 0.9,
+      "SizeY": 1.025,
       "SelectionSizeZ": 0.45,
       "SelectionThickness": 0.85,
       "BuildBotTotal": 2,
@@ -42984,9 +42984,9 @@
       },
       "LifeBarHeight": 0.075,
       "Id": "URS0202",
-      "CollisionOffsetY": -0.29,
+      "CollisionOffsetY": -0.375,
       "SizeX": 1.6,
-      "SizeY": 1.5,
+      "SizeY": 1.6,
       "SelectionSizeZ": 4.2,
       "Intel": {
         "SonarRadius": 120,
@@ -43602,7 +43602,7 @@
         "KTurnDamping": 2,
         "CirclingElevationChangeRatio": 0.25,
         "TransportHoverHeight": 4,
-        "MaxAirspeed": 13.5
+        "MaxAirspeed": 14.5
       },
       "Defense": {
         "ArmorType": "Light",
@@ -48349,10 +48349,10 @@
         "MassMult": 0.9
       },
       "SelectionSizeX": 0.75,
-      "SizeY": 1.6,
+      "SizeY": 1.725,
       "SelectionSizeZ": 0.75,
       "SelectionThickness": 0.5,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "SizeX": 0.6,
       "Display": {
         "UniformScale": 0.1,
@@ -49312,7 +49312,7 @@
       "Footprint": {
         "MinWaterDepth": 1.5
       },
-      "SizeZ": 0.5,
+      "SizeZ": 0.6,
       "Intel": {
         "ReactivateTime": 4,
         "SonarRadius": 288,
@@ -49356,11 +49356,11 @@
         "MassMult": 0.9
       },
       "SelectionSizeX": 0.45,
-      "SizeY": 0.6,
+      "SizeY": 0.825,
       "SelectionSizeZ": 0.45,
-      "SizeX": 0.5,
+      "SizeX": 0.6,
       "SelectionThickness": 0.88,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "Display": {
         "UniformScale": 0.125,
         "Abilities": [
@@ -51301,7 +51301,7 @@
           "Cue": "URL0309_Move_Start"
         }
       },
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "Id": "URL0309",
       "Wreckage": {
         "EnergyMult": 0,
@@ -51317,7 +51317,7 @@
         "MassMult": 0.9
       },
       "SizeX": 0.85,
-      "SizeY": 0.9,
+      "SizeY": 1.025,
       "SelectionCenterOffsetZ": 0.025,
       "Intel": {
         "VisionRadius": 26
@@ -60137,11 +60137,11 @@
         "MassMult": 0.9
       },
       "SelectionSizeX": 0.5,
-      "SizeY": 1.2,
+      "SizeY": 1.325,
       "SelectionSizeZ": 0.5,
       "SizeX": 0.9,
       "SelectionThickness": 0.78,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "Display": {
         "UniformScale": 0.125,
         "Abilities": [
@@ -66494,7 +66494,7 @@
       "SizeX": 0.8,
       "SizeY": 1,
       "SelectionSizeZ": 0.9,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "Veteran": {
         "Level2": 4,
         "Level3": 6,
@@ -67077,7 +67077,7 @@
         "KTurnDamping": 2,
         "CirclingElevationChangeRatio": 0.25,
         "TransportHoverHeight": 4,
-        "MaxAirspeed": 10
+        "MaxAirspeed": 10.75
       },
       "Defense": {
         "ArmorType": "Light",
@@ -70877,11 +70877,11 @@
         "MassMult": 0.9
       },
       "SelectionSizeX": 0.4,
-      "SizeY": 0.6,
+      "SizeY": 0.725,
       "SelectionSizeZ": 0.4,
       "SizeX": 0.6,
       "SelectionThickness": 1,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "Display": {
         "UniformScale": 0.06,
         "Abilities": [
@@ -74800,7 +74800,7 @@
         "KTurnDamping": 2,
         "CirclingElevationChangeRatio": 0.25,
         "TransportHoverHeight": 4,
-        "MaxAirspeed": 13.5
+        "MaxAirspeed": 14.5
       },
       "Defense": {
         "ArmorType": "Light",
@@ -79265,10 +79265,10 @@
         "MassMult": 0.9
       },
       "SelectionSizeX": 0.5,
-      "SizeY": 0.75,
+      "SizeY": 0.875,
       "SelectionSizeZ": 0.95,
       "SelectionThickness": 0.45,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "SizeX": 0.65,
       "Display": {
         "UniformScale": 0.05,
@@ -79875,7 +79875,7 @@
       "Footprint": {
         "MinWaterDepth": 1.5
       },
-      "SizeZ": 0.5,
+      "SizeZ": 0.7,
       "Intel": {
         "ReactivateTime": 4,
         "SonarRadius": 288,
@@ -79920,11 +79920,11 @@
         "MassMult": 0.9
       },
       "SelectionSizeX": 0.55,
-      "SizeY": 0.6,
+      "SizeY": 0.825,
       "SelectionSizeZ": 0.55,
-      "SizeX": 0.5,
+      "SizeX": 0.7,
       "SelectionThickness": 0.7,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "Display": {
         "UniformScale": 0.06,
         "Abilities": [
@@ -89426,10 +89426,10 @@
         "ReactivateTime": 6
       },
       "SelectionSizeX": 0.65,
-      "SizeY": 1.1,
+      "SizeY": 1.2,
       "SelectionSizeZ": 0.65,
       "SelectionThickness": 0.6,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "SizeX": 1,
       "Display": {
         "UniformScale": 0.06,
@@ -96141,7 +96141,7 @@
         "KTurnDamping": 2,
         "CirclingElevationChangeRatio": 0.25,
         "TransportHoverHeight": 4,
-        "MaxAirspeed": 10
+        "MaxAirspeed": 10.75
       },
       "Defense": {
         "ArmorType": "Light",
@@ -99235,7 +99235,7 @@
       "LifeBarSize": 0.9,
       "StrategicIconName": "icon_structure1_antiair",
       "LifeBarOffset": 0.35,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "General": {
         "CommandCaps": {
           "RULEUCC_RetaliateToggle": true,
@@ -99319,7 +99319,7 @@
         "MassMult": 0.9
       },
       "SelectionSizeX": 0.35,
-      "SizeY": 1,
+      "SizeY": 1.15,
       "SelectionSizeZ": 0.35,
       "SizeX": 0.5,
       "Veteran": {
@@ -100176,11 +100176,11 @@
         "MassMult": 0.9
       },
       "SelectionSizeX": 0.6,
-      "SizeY": 0.8,
+      "SizeY": 1,
       "SelectionSizeZ": 0.6,
       "SizeX": 0.6,
       "SelectionThickness": 0.66,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "Display": {
         "UniformScale": 0.05,
         "Abilities": [
@@ -101843,8 +101843,8 @@
         "AirClass": true,
         "ClassGenericUpTo": 2
       },
-      "LifeBarOffset": 0.6,
-      "LifeBarSize": 0.6,
+      "LifeBarOffset": 1,
+      "LifeBarSize": 1,
       "BuildIconSortPriority": 30,
       "Description": "Gunship",
       "LifeBarHeight": 0.075,
@@ -101970,7 +101970,7 @@
       "Intel": {
         "VisionRadius": 32
       },
-      "SelectionSizeZ": 0.9,
+      "SelectionSizeZ": 1.2,
       "SizeY": 0.4,
       "Veteran": {
         "Level2": 12,
@@ -101979,7 +101979,7 @@
         "Level4": 24,
         "Level5": 30
       },
-      "SelectionSizeX": 0.45,
+      "SelectionSizeX": 0.5,
       "Display": {
         "UniformScale": 0.066,
         "Mesh": {
@@ -103882,7 +103882,7 @@
         "KTurnDamping": 4,
         "CirclingElevationChangeRatio": 0.25,
         "TransportHoverHeight": 4,
-        "MaxAirspeed": 13.5
+        "MaxAirspeed": 14.5
       },
       "Defense": {
         "ArmorType": "Light",
@@ -108178,10 +108178,10 @@
         "MassMult": 0.9
       },
       "SelectionSizeX": 0.55,
-      "SizeY": 0.9,
+      "SizeY": 1.2,
       "SelectionSizeZ": 0.55,
       "SelectionThickness": 0.71,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "SizeX": 0.65,
       "Display": {
         "UniformScale": 0.05,
@@ -108889,11 +108889,11 @@
         "MassMult": 0.9
       },
       "SelectionSizeX": 0.6,
-      "SizeY": 1,
+      "SizeY": 1.125,
       "SelectionSizeZ": 0.6,
       "SizeX": 1.2,
       "SelectionThickness": 0.66,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "Display": {
         "UniformScale": 0.05,
         "Abilities": [
@@ -113504,7 +113504,7 @@
       },
       "LifeBarHeight": 0.075,
       "SizeZ": 1.5,
-      "SelectionThickness": 0.3,
+      "SelectionThickness": 0.64,
       "Defense": {
         "ArmorType": "Normal",
         "SurfaceThreatLevel": 6,
@@ -113571,7 +113571,7 @@
       "Intel": {
         "VisionRadius": 26
       },
-      "SelectionSizeZ": 0.8,
+      "SelectionSizeZ": 0.85,
       "SizeY": 0.5,
       "Veteran": {
         "Level2": 30,
@@ -113580,7 +113580,7 @@
         "Level4": 60,
         "Level5": 75
       },
-      "SelectionSizeX": 0.8,
+      "SelectionSizeX": 0.85,
       "Display": {
         "UniformScale": 0.05,
         "Abilities": [
@@ -117002,7 +117002,7 @@
       "LifeBarSize": 1.25,
       "StrategicIconName": "icon_structure3_antiair",
       "LifeBarOffset": 0.6,
-      "CollisionOffsetY": -0.25,
+      "CollisionOffsetY": -0.375,
       "General": {
         "CommandCaps": {
           "RULEUCC_RetaliateToggle": true,
@@ -117087,7 +117087,7 @@
         "MassMult": 0.9
       },
       "SelectionSizeX": 0.55,
-      "SizeY": 0.9,
+      "SizeY": 1.7,
       "SelectionSizeZ": 0.55,
       "SizeX": 0.8,
       "Veteran": {

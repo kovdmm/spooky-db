@@ -1,5 +1,5 @@
 {
-  "version": "3810",
+  "version": "3811",
   "units": [
     {
       "Categories": [
@@ -1297,7 +1297,7 @@
         "BuildCostMass": 120
       },
       "Air": {
-        "MaxAirspeed": 10
+        "MaxAirspeed": 10.75
       },
       "Defense": {
         "Health": 500
@@ -4059,7 +4059,7 @@
         "FuelUseTime": 800
       },
       "Air": {
-        "MaxAirspeed": 13.5
+        "MaxAirspeed": 14.5
       },
       "Defense": {
         "Health": 1675
@@ -8217,7 +8217,7 @@
         "FuelUseTime": 800
       },
       "Air": {
-        "MaxAirspeed": 15
+        "MaxAirspeed": 17.5
       },
       "Defense": {
         "Health": 4500,
@@ -9378,11 +9378,11 @@
       },
       "Defense": {
         "Shield": {
-          "ShieldSize": 25,
+          "ShieldSize": 24,
           "ShieldMaxHealth": 20000,
           "ShieldRegenStartTime": 1,
-          "ShieldRegenRate": 100,
-          "ShieldRechargeTime": 120
+          "ShieldRegenRate": 200,
+          "ShieldRechargeTime": 75
         },
         "RegenRate": 20,
         "Health": 12500
@@ -9508,13 +9508,13 @@
               ]
             }
           ],
-          "Damage": 20,
+          "Damage": 40,
           "DamageType": "Normal",
           "TurretPitch": 45,
           "TurretPitchRange": 45,
           "DisplayName": "Linked Railgun",
           "TurretPitchSpeed": 180,
-          "MaxRadius": 45,
+          "MaxRadius": 55,
           "ProjectileId": "/projectiles/TAARailgun01/TAARailgun01_proj.bp",
           "MuzzleVelocity": 90,
           "RackFireTogether": false,
@@ -11259,7 +11259,7 @@
         "BuildCostMass": 120
       },
       "Air": {
-        "MaxAirspeed": 10
+        "MaxAirspeed": 10.75
       },
       "Defense": {
         "Health": 500
@@ -14163,7 +14163,7 @@
         "FuelUseTime": 800
       },
       "Air": {
-        "MaxAirspeed": 13.5
+        "MaxAirspeed": 14.5
       },
       "Defense": {
         "Health": 1525
@@ -21758,7 +21758,7 @@
         "BuildCostMass": 120
       },
       "Air": {
-        "MaxAirspeed": 10
+        "MaxAirspeed": 10.75
       },
       "Defense": {
         "Health": 500
@@ -24325,7 +24325,7 @@
       },
       "StrategicIconName": "icon_gunship2_transport",
       "Air": {
-        "MaxAirspeed": 13.5
+        "MaxAirspeed": 14.5
       },
       "Defense": {
         "Health": 1575
@@ -30903,7 +30903,7 @@
         "BuildCostMass": 120
       },
       "Air": {
-        "MaxAirspeed": 10
+        "MaxAirspeed": 10.75
       },
       "Defense": {
         "Health": 500
@@ -33405,7 +33405,7 @@
       },
       "StrategicIconName": "icon_gunship2_transport",
       "Air": {
-        "MaxAirspeed": 13.5
+        "MaxAirspeed": 14.5
       },
       "Defense": {
         "Health": 1625
