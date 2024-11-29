@@ -1,5 +1,5 @@
 {
-  "version": "3811",
+  "version": "3813",
   "units": [
     {
       "Categories": [
@@ -1099,7 +1099,7 @@
           "RackSalvoChargeTime": 0,
           "MuzzleSalvoSize": 4,
           "MuzzleSalvoDelay": 0.2,
-          "DoTTime": 4.2,
+          "DoTTime": 3.6,
           "InitialDamage": 42.5,
           "FiringTolerance": 6,
           "MaxRadius": 40
@@ -1277,6 +1277,7 @@
         "VISIBLETORECON",
         null
       ],
+      "Description": "Light Air Transport",
       "General": {
         "UnitName": "C-6 Courier",
         "Icon": "air",
@@ -1284,7 +1285,6 @@
         "Classification": "RULEUC_MilitaryAircraft"
       },
       "StrategicIconName": "icon_gunship1_transport",
-      "Description": "Light Air Transport",
       "Physics": {
         "MaxSpeed": 0.5,
         "FuelRechargeRate": 70,
@@ -2833,7 +2833,7 @@
           "DisplayName": "Napalm Carpet Bomb",
           "TurretPitchSpeed": 60,
           "DoTPulses": 10,
-          "DoTTime": 6,
+          "DoTTime": 5.4,
           "InitialDamage": 20,
           "MaxRadius": 60,
           "ProjectileId": "/projectiles/TIFNapalmCarpetBomb02/TIFNapalmCarpetBomb02_proj.bp",
@@ -3430,8 +3430,13 @@
         "Icon": "air",
         "Classification": "RULEUC_MilitaryAircraft"
       },
-      "StrategicIconName": "icon_gunship2_directfire",
+      "Economy": {
+        "BuildTime": 1280,
+        "BuildCostEnergy": 3840,
+        "BuildCostMass": 192
+      },
       "BuildIconSortPriority": 30,
+      "StrategicIconName": "icon_gunship2_directfire",
       "Physics": {
         "Elevation": 10,
         "FuelRechargeRate": 5,
@@ -3465,11 +3470,6 @@
         "Abilities": [
           "Transport"
         ]
-      },
-      "Economy": {
-        "BuildTime": 1280,
-        "BuildCostEnergy": 3840,
-        "BuildCostMass": 192
       },
       "Weapon": [
         {
@@ -4044,20 +4044,19 @@
         "WEAKDIRECTFIRE",
         null
       ],
-      "General": {
-        "UnitName": "C14 Star Lifter",
-        "Icon": "air",
-        "FactionName": "UEF",
-        "Classification": "RULEUC_MilitaryAircraft"
+      "Description": "Air Transport",
+      "Economy": {
+        "BuildTime": 2640,
+        "BuildCostEnergy": 13200,
+        "BuildCostMass": 330
       },
-      "BuildIconSortPriority": 40,
-      "StrategicIconName": "icon_gunship2_transport",
       "Physics": {
         "MaxSpeed": 0.5,
         "FuelRechargeRate": 70,
         "Elevation": 10,
         "FuelUseTime": 800
       },
+      "StrategicIconName": "icon_gunship2_transport",
       "Air": {
         "MaxAirspeed": 14.5
       },
@@ -4079,18 +4078,19 @@
         "Level4": 12,
         "Level5": 15
       },
-      "Description": "Air Transport",
+      "General": {
+        "UnitName": "C14 Star Lifter",
+        "Icon": "air",
+        "FactionName": "UEF",
+        "Classification": "RULEUC_MilitaryAircraft"
+      },
       "Display": {
         "Abilities": [
           "Anti-Air",
           "Transport"
         ]
       },
-      "Economy": {
-        "BuildTime": 2640,
-        "BuildCostEnergy": 13200,
-        "BuildCostMass": 330
-      },
+      "BuildIconSortPriority": 40,
       "Weapon": [
         {
           "RateOfFire": 3.3333333333333,
@@ -5506,7 +5506,7 @@
           "MinRadius": 50,
           "MaxRadius": 115,
           "ProjectileId": "/projectiles/TIFArtillery01/TIFArtillery01_proj.bp",
-          "MuzzleVelocity": 26.13,
+          "MuzzleVelocity": 27.8,
           "RackFireTogether": false,
           "RackSalvoChargeTime": 0,
           "MuzzleSalvoSize": 1,
@@ -8202,20 +8202,20 @@
         "WEAKDIRECTFIRE",
         null
       ],
-      "General": {
-        "FactionName": "UEF",
-        "Icon": "air",
-        "UnitName": "Continental",
-        "Classification": "RULEUC_MilitaryAircraft"
+      "Description": "Heavy Air Transport",
+      "Economy": {
+        "BuildTime": 5250,
+        "BuildCostEnergy": 52500,
+        "BuildCostMass": 1400,
+        "MaintenanceConsumptionPerSecondEnergy": 400
       },
-      "BuildIconSortPriority": 60,
-      "StrategicIconName": "icon_gunship3_transport",
       "Physics": {
         "MaxSpeed": 0.5,
         "FuelRechargeRate": 70,
         "Elevation": 10,
         "FuelUseTime": 800
       },
+      "StrategicIconName": "icon_gunship3_transport",
       "Air": {
         "MaxAirspeed": 17.5
       },
@@ -8244,7 +8244,12 @@
         "Level4": 48,
         "Level5": 60
       },
-      "Description": "Heavy Air Transport",
+      "General": {
+        "FactionName": "UEF",
+        "Icon": "air",
+        "UnitName": "Continental",
+        "Classification": "RULEUC_MilitaryAircraft"
+      },
       "Display": {
         "Abilities": [
           "Anti-Air",
@@ -8252,12 +8257,7 @@
           "Transport"
         ]
       },
-      "Economy": {
-        "BuildTime": 5250,
-        "BuildCostEnergy": 52500,
-        "BuildCostMass": 1400,
-        "MaintenanceConsumptionPerSecondEnergy": 400
-      },
+      "BuildIconSortPriority": 60,
       "Weapon": [
         {
           "RateOfFire": 2,
@@ -10313,8 +10313,7 @@
           "MaxRadius": 26,
           "DisplayName": "Target Tracker",
           "Damage": 0,
-          "RateOfFire": 0.1,
-          "WeaponCategory": "Missile"
+          "RateOfFire": 0.1
         }
       ]
     },
@@ -10665,7 +10664,7 @@
           "RackSalvoChargeTime": 0,
           "MuzzleSalvoSize": 3,
           "MuzzleSalvoDelay": 0.8,
-          "DoTTime": 1,
+          "DoTTime": 0.8,
           "RackSalvoReloadTime": 0,
           "RateOfFire": 0.25,
           "FiringTolerance": 2,
@@ -11239,6 +11238,7 @@
         "VISIBLETORECON",
         null
       ],
+      "Description": "Light Air Transport",
       "General": {
         "UnitName": "Skyhook",
         "Icon": "air",
@@ -11246,7 +11246,6 @@
         "Classification": "RULEUC_MilitaryAircraft"
       },
       "StrategicIconName": "icon_gunship1_transport",
-      "Description": "Light Air Transport",
       "Physics": {
         "FuelRechargeRate": 70,
         "MaxSpeed": 0.5,
@@ -12100,20 +12099,8 @@
           "MaxRadius": 22
         },
         {
-          "DisplayName": "Nanite Torpedo",
-          "MaxRadius": 60,
-          "WeaponCategory": "Anti Navy",
           "RateOfFire": 0.25,
           "ProjectilesPerOnFire": 1,
-          "MuzzleVelocity": 5,
-          "RackFireTogether": false,
-          "RackSalvoChargeTime": 0,
-          "MuzzleSalvoDelay": 0.8,
-          "MuzzleSalvoSize": 2,
-          "Damage": 500,
-          "ProjectileLifetime": 7,
-          "DamageType": "Normal",
-          "FiringTolerance": 2,
           "RackBones": [
             {
               "MuzzleBones": [
@@ -12121,8 +12108,22 @@
               ]
             }
           ],
+          "ProjectileLifetime": 7,
+          "DamageType": "Normal",
+          "DoTPulses": 5,
+          "WeaponCategory": "Anti Navy",
+          "ProjectileId": "/projectiles/CANTorpedoNanite01/CANTorpedoNanite01_proj.bp",
+          "MuzzleVelocity": 5,
+          "RackFireTogether": false,
+          "RackSalvoChargeTime": 0,
+          "MuzzleSalvoSize": 3,
+          "MuzzleSalvoDelay": 0.8,
+          "DisplayName": "Nanite Torpedo",
+          "DoTTime": 0.4,
+          "FiringTolerance": 2,
           "RackSalvoReloadTime": 0,
-          "ProjectileId": "/projectiles/CANTorpedoNanite01/CANTorpedoNanite01_proj.bp"
+          "MaxRadius": 60,
+          "Damage": 60
         },
         {
           "DamageRadius": 4,
@@ -12416,7 +12417,7 @@
           "RackSalvoChargeTime": 0,
           "MuzzleSalvoSize": 3,
           "MuzzleSalvoDelay": 0.6,
-          "DoTTime": 1,
+          "DoTTime": 0.8,
           "TurretYawSpeed": 25,
           "TurretYawRange": 180,
           "FiringTolerance": 30,
@@ -12532,13 +12533,13 @@
         "HealthMult": 0.9,
         "MassMult": 0.9
       },
+      "Physics": {},
       "Display": {
         "Abilities": [
           "Sonar",
           "Upgradeable"
         ]
       },
-      "Physics": {},
       "BuildIconSortPriority": 190
     },
     {
@@ -13039,7 +13040,7 @@
           "RackSalvoChargeTime": 0,
           "MuzzleSalvoSize": 4,
           "MuzzleSalvoDelay": 0.2,
-          "DoTTime": 1,
+          "DoTTime": 0.8,
           "ProjectilesPerOnFire": 2,
           "FiringTolerance": 6,
           "MinRadius": 4,
@@ -13236,7 +13237,7 @@
           "RackSalvoChargeTime": 0,
           "MuzzleSalvoSize": 6,
           "MuzzleSalvoDelay": 0.4,
-          "DoTTime": 0.5,
+          "DoTTime": 0.4,
           "RackSalvoReloadTime": 0,
           "MaxRadius": 45,
           "FiringTolerance": 2,
@@ -13322,7 +13323,7 @@
       },
       "Intel": {
         "WaterVisionRadius": 20,
-        "VisionRadius": 22
+        "VisionRadius": 20
       },
       "Veteran": {
         "Level2": 14,
@@ -13464,36 +13465,36 @@
         null
       ],
       "Description": "Destroyer",
-      "Economy": {
-        "BuildTime": 10000,
-        "BuildCostEnergy": 15000,
-        "BuildCostMass": 2250
-      },
       "BuildIconSortPriority": 25,
-      "StrategicIconName": "icon_ship2_antinavy",
       "General": {
         "FactionName": "Cybran",
         "Icon": "amph",
         "UnitName": "Salem Class",
         "Classification": "RULEUC_MilitaryShip"
       },
+      "StrategicIconName": "icon_ship2_antinavy",
+      "Economy": {
+        "BuildTime": 10000,
+        "BuildCostEnergy": 15000,
+        "BuildCostMass": 2250
+      },
+      "Defense": {
+        "Health": 6500
+      },
       "Physics": {
         "TurnRate": 50,
         "MaxSpeed": 5
+      },
+      "Id": "URS0201",
+      "Wreckage": {
+        "HealthMult": 0.9,
+        "MassMult": 0.9
       },
       "Intel": {
         "SonarRadius": 32,
         "RadarRadius": 36,
         "WaterVisionRadius": 44,
         "VisionRadius": 32
-      },
-      "Defense": {
-        "Health": 6500
-      },
-      "Id": "URS0201",
-      "Wreckage": {
-        "HealthMult": 0.9,
-        "MassMult": 0.9
       },
       "Veteran": {
         "Level2": 32,
@@ -13601,7 +13602,7 @@
           "RackSalvoChargeTime": 0,
           "MuzzleSalvoSize": 2,
           "MuzzleSalvoDelay": 0.8,
-          "DoTTime": 0.5,
+          "DoTTime": 0.4,
           "RackSalvoReloadTime": 0,
           "MaxRadius": 45,
           "FiringTolerance": 2,
@@ -14148,20 +14149,19 @@
         "WEAKDIRECTFIRE",
         null
       ],
-      "General": {
-        "UnitName": "Dragon Fly",
-        "Icon": "air",
-        "FactionName": "Cybran",
-        "Classification": "RULEUC_MilitaryAircraft"
+      "Description": "Air Transport",
+      "Economy": {
+        "BuildTime": 2640,
+        "BuildCostEnergy": 13200,
+        "BuildCostMass": 330
       },
-      "BuildIconSortPriority": 40,
-      "StrategicIconName": "icon_gunship2_transport",
       "Physics": {
         "FuelRechargeRate": 70,
         "MaxSpeed": 0.5,
         "Elevation": 9,
         "FuelUseTime": 800
       },
+      "StrategicIconName": "icon_gunship2_transport",
       "Air": {
         "MaxAirspeed": 14.5
       },
@@ -14183,7 +14183,12 @@
         "Level4": 12,
         "Level5": 15
       },
-      "Description": "Air Transport",
+      "General": {
+        "UnitName": "Dragon Fly",
+        "Icon": "air",
+        "FactionName": "Cybran",
+        "Classification": "RULEUC_MilitaryAircraft"
+      },
       "Display": {
         "Abilities": [
           "Anti-Air",
@@ -14191,11 +14196,7 @@
           "Transport"
         ]
       },
-      "Economy": {
-        "BuildTime": 2640,
-        "BuildCostEnergy": 13200,
-        "BuildCostMass": 330
-      },
+      "BuildIconSortPriority": 40,
       "Weapon": [
         {
           "RateOfFire": 3.3333333333333,
@@ -15456,7 +15457,7 @@
           "RackSalvoChargeTime": 0,
           "MuzzleSalvoSize": 3,
           "MuzzleSalvoDelay": 0.6,
-          "DoTTime": 0.5,
+          "DoTTime": 0.4,
           "TurretYawSpeed": 30,
           "TurretYawRange": 180,
           "FiringTolerance": 60,
@@ -15547,7 +15548,7 @@
           "MinRadius": 50,
           "WeaponCategory": "Artillery",
           "ProjectileId": "/projectiles/CIFMolecularResonanceShell01/CIFMolecularResonanceShell01_proj.bp",
-          "MuzzleVelocity": 26.13,
+          "MuzzleVelocity": 27.8,
           "RackFireTogether": false,
           "RackSalvoChargeTime": 0,
           "MuzzleSalvoSize": 1,
@@ -16064,13 +16065,13 @@
         "HealthMult": 0.9,
         "MassMult": 0.9
       },
+      "Physics": {},
       "Display": {
         "Abilities": [
           "Sonar",
           "Upgradeable"
         ]
       },
-      "Physics": {},
       "BuildIconSortPriority": 190
     },
     {
@@ -16858,12 +16859,12 @@
           "RackFireTogether": false,
           "RackSalvoChargeTime": 0,
           "MuzzleSalvoSize": 1,
-          "MuzzleSalvoDelay": 0,
           "ProjectileLifetimeUsesMultiplier": 1.15,
-          "TurretYawSpeed": 120,
+          "MuzzleSalvoDelay": 0,
+          "RackSalvoReloadTime": 0,
           "TurretYawRange": 35,
           "FiringTolerance": 2,
-          "RackSalvoReloadTime": 0,
+          "TurretYawSpeed": 120,
           "WeaponCategory": "Direct Fire"
         },
         {
@@ -17037,7 +17038,7 @@
           "RackSalvoChargeTime": 0,
           "MuzzleSalvoSize": 1,
           "MuzzleSalvoDelay": 0,
-          "DoTTime": 0.5,
+          "DoTTime": 0.4,
           "RackSalvoReloadTime": 0,
           "MaxRadius": 80,
           "FiringTolerance": 2,
@@ -17229,7 +17230,7 @@
         },
         {
           "ProjectileId": "/projectiles/CANTorpedoNanite01/CANTorpedoNanite01_proj.bp",
-          "DoTTime": 0.5,
+          "DoTTime": 0.4,
           "MaxRadius": 34,
           "WeaponCategory": "Anti Navy",
           "RateOfFire": 0.25,
@@ -17881,7 +17882,7 @@
           "RackSalvoChargeTime": 0,
           "MuzzleSalvoSize": 4,
           "MuzzleSalvoDelay": 0,
-          "DoTTime": 0.5,
+          "DoTTime": 0.4,
           "RackSalvoReloadTime": 0,
           "FiringTolerance": 2,
           "TurretYawRange": 0,
@@ -19102,7 +19103,7 @@
           "RackSalvoChargeTime": 0,
           "MuzzleSalvoSize": 6,
           "MuzzleSalvoDelay": 0.6,
-          "DoTTime": 0.5,
+          "DoTTime": 0.4,
           "TurretYawSpeed": 30,
           "TurretYawRange": 180,
           "FiringTolerance": 2,
@@ -20183,7 +20184,7 @@
         },
         {
           "ProjectileId": "/projectiles/CANTorpedoNanite01/CANTorpedoNanite01_proj.bp",
-          "DoTTime": 0.5,
+          "DoTTime": 0.4,
           "MaxRadius": 64,
           "WeaponCategory": "Anti Navy",
           "RateOfFire": 0.76923076923077,
@@ -20413,6 +20414,7 @@
       "BuildIconSortPriority": 100,
       "Weapon": [
         {
+          "DamageRadius": 3,
           "FiringRandomness": 2,
           "RateOfFire": 0.5,
           "ProjectilesPerOnFire": 3,
@@ -20424,7 +20426,7 @@
               ]
             }
           ],
-          "Damage": 190,
+          "Damage": 150,
           "DamageType": "Normal",
           "TurretPitch": -15,
           "DisplayName": "Iridium Rocket Pack",
@@ -23018,13 +23020,13 @@
         "HealthMult": 0.9,
         "MassMult": 0.9
       },
+      "Physics": {},
       "Display": {
         "Abilities": [
           "Sonar",
           "Upgradeable"
         ]
       },
-      "Physics": {},
       "BuildIconSortPriority": 190
     },
     {
@@ -23627,7 +23629,7 @@
       "Physics": {
         "TurnRate": 90,
         "Elevation": 0.15,
-        "MaxSpeed": 4.3
+        "MaxSpeed": 4
       },
       "Economy": {
         "BuildTime": 900,
@@ -23644,7 +23646,7 @@
         "MassMult": 0.9
       },
       "Intel": {
-        "VisionRadius": 24
+        "VisionRadius": 22
       },
       "Veteran": {
         "Level2": 12,
@@ -24019,6 +24021,7 @@
         "OVERLAYANTINAVY",
         "OVERLAYDEFENSE",
         "OVERLAYDIRECTFIRE",
+        "OVERLAYINDIRECTFIRE",
         "OVERLAYRADAR",
         "OVERLAYSONAR",
         "PRODUCTSC1",
@@ -24217,9 +24220,9 @@
       "BuildIconSortPriority": 35,
       "Description": "Guided Missile",
       "Economy": {
-        "BuildTime": 2000,
-        "BuildCostEnergy": 6000,
-        "BuildCostMass": 300
+        "BuildTime": 1200,
+        "BuildCostEnergy": 4600,
+        "BuildCostMass": 230
       },
       "Air": {
         "TurnSpeed": 1,
@@ -24266,7 +24269,7 @@
           "DoTPulses": 20,
           "MaxRadius": 25,
           "ProjectileId": "/projectiles/AIFGuidedMissile01/AIFGuidedMissile01_proj.bp",
-          "DoTTime": 10,
+          "DoTTime": 9.5,
           "MuzzleVelocity": 18,
           "RackFireTogether": false,
           "RackSalvoChargeTime": 0,
@@ -24311,33 +24314,8 @@
         "WEAKANTIAIR",
         null
       ],
-      "Description": "Air Transport",
-      "Economy": {
-        "BuildTime": 2640,
-        "BuildCostEnergy": 13200,
-        "BuildCostMass": 330
-      },
-      "Physics": {
-        "MaxSpeed": 0.5,
-        "FuelRechargeRate": 70,
-        "Elevation": 9,
-        "FuelUseTime": 800
-      },
       "StrategicIconName": "icon_gunship2_transport",
-      "Air": {
-        "MaxAirspeed": 14.5
-      },
-      "Defense": {
-        "Health": 1575
-      },
       "Id": "UAA0104",
-      "Wreckage": {
-        "HealthMult": 0.9,
-        "MassMult": 0.9
-      },
-      "Intel": {
-        "VisionRadius": 32
-      },
       "Veteran": {
         "Level2": 6,
         "Level3": 9,
@@ -24345,19 +24323,44 @@
         "Level4": 12,
         "Level5": 15
       },
+      "Description": "Air Transport",
+      "Economy": {
+        "BuildTime": 2640,
+        "BuildCostEnergy": 13200,
+        "BuildCostMass": 330
+      },
+      "Air": {
+        "MaxAirspeed": 14.5
+      },
+      "Defense": {
+        "Health": 1575
+      },
+      "Physics": {
+        "MaxSpeed": 0.5,
+        "FuelRechargeRate": 70,
+        "Elevation": 9,
+        "FuelUseTime": 800
+      },
+      "Wreckage": {
+        "HealthMult": 0.9,
+        "MassMult": 0.9
+      },
       "General": {
         "UnitName": "Aluminar",
         "Icon": "air",
         "FactionName": "Aeon",
         "Classification": "RULEUC_MilitaryAircraft"
       },
+      "Intel": {
+        "VisionRadius": 32
+      },
+      "BuildIconSortPriority": 40,
       "Display": {
         "Abilities": [
           "Anti-Air",
           "Transport"
         ]
       },
-      "BuildIconSortPriority": 40,
       "Weapon": [
         {
           "RateOfFire": 0.4,
@@ -24602,7 +24605,7 @@
           "TurretPitchSpeed": 30,
           "MaxRadius": 70,
           "ProjectileId": "/projectiles/AAAZealotMissile01/AAAZealotMissile01_proj.bp",
-          "MuzzleVelocity": 40,
+          "MuzzleVelocity": 35,
           "RackFireTogether": false,
           "RackSalvoChargeTime": 0,
           "MuzzleSalvoSize": 1,
@@ -25562,13 +25565,13 @@
           "TurretPitchRange": 60,
           "DisplayName": "Miasma Artillery",
           "TurretPitchSpeed": 6,
-          "DoTTime": 1,
+          "DoTTime": 0.8,
           "DoTPulses": 5,
           "TurretYawSpeed": 6,
           "MinRadius": 50,
           "MaxRadius": 115,
           "ProjectileId": "/projectiles/AIFMiasmaShell01/AIFMiasmaShell01_proj.bp",
-          "MuzzleVelocity": 26.13,
+          "MuzzleVelocity": 27.8,
           "RackFireTogether": false,
           "RackSalvoChargeTime": 0,
           "TurretYaw": 0,
@@ -25713,8 +25716,8 @@
         null
       ],
       "Description": "Tactical Missile Defense",
-      "StrategicIconName": "icon_structure2_antimissile",
       "BuildIconSortPriority": 155,
+      "StrategicIconName": "icon_structure2_antimissile",
       "General": {
         "FactionName": "Aeon",
         "Icon": "amph",
@@ -25726,9 +25729,7 @@
         "BuildCostMass": 280,
         "BuildCostEnergy": 3200
       },
-      "Intel": {
-        "VisionRadius": 20
-      },
+      "Physics": {},
       "Defense": {
         "Health": 500
       },
@@ -25737,13 +25738,15 @@
         "HealthMult": 0.9,
         "MassMult": 0.9
       },
+      "Intel": {
+        "VisionRadius": 20
+      },
       "Display": {
         "Abilities": [
           "Aquatic",
           "Tactical Missile Defense"
         ]
       },
-      "Physics": {},
       "Weapon": [
         {
           "RackBones": [
@@ -25941,13 +25944,13 @@
         "HealthMult": 0.9,
         "MassMult": 0.9
       },
+      "Physics": {},
       "Display": {
         "Abilities": [
           "Sonar",
           "Upgradeable"
         ]
       },
-      "Physics": {},
       "BuildIconSortPriority": 190
     },
     {
@@ -27270,7 +27273,7 @@
           "RackFireTogether": false,
           "RackSalvoChargeTime": 0,
           "MuzzleSalvoSize": 1,
-          "DoTTime": 5,
+          "DoTTime": 4.2,
           "MuzzleSalvoDelay": 0,
           "TurretYawSpeed": 30,
           "TurretYawRange": 180,
@@ -28516,7 +28519,7 @@
           "RateOfFire": 0.05,
           "ProjectilesPerOnFire": 1,
           "TurretYaw": 0,
-          "DoTTime": 2,
+          "DoTTime": 1,
           "RackBones": [
             {
               "MuzzleBones": [
@@ -28830,21 +28833,25 @@
       "Description": "Sonar Platform",
       "StrategicIconName": "icon_structure3_intel",
       "BuildIconSortPriority": 190,
+      "General": {
+        "FactionName": "Aeon",
+        "Icon": "sea",
+        "Classification": "RULEUC_MilitaryShip"
+      },
       "Economy": {
         "BuildTime": 1200,
         "BuildCostEnergy": 12000,
         "BuildCostMass": 1000,
         "MaintenanceConsumptionPerSecondEnergy": 500
       },
-      "General": {
-        "FactionName": "Aeon",
-        "Icon": "sea",
-        "Classification": "RULEUC_MilitaryShip"
-      },
       "Defense": {
         "Health": 1500
       },
       "Id": "UAS0305",
+      "Physics": {
+        "TurnRate": 100,
+        "MaxSpeed": 4.5
+      },
       "Intel": {
         "SonarRadius": 448,
         "WaterVisionRadius": 24,
@@ -28855,10 +28862,6 @@
           "Sonar",
           "Torpedo Defense"
         ]
-      },
-      "Physics": {
-        "TurnRate": 100,
-        "MaxSpeed": 4.5
       },
       "Weapon": [
         {
@@ -30890,13 +30893,13 @@
         "FactionName": "Seraphim",
         "Classification": "RULEUC_MilitaryAircraft"
       },
-      "StrategicIconName": "icon_gunship1_transport",
       "Physics": {
         "MaxSpeed": 0.5,
         "FuelRechargeRate": 70,
         "Elevation": 8,
         "FuelUseTime": 800
       },
+      "StrategicIconName": "icon_gunship1_transport",
       "Economy": {
         "BuildTime": 800,
         "BuildCostEnergy": 4800,
@@ -32067,9 +32070,9 @@
         "BuildCostEnergy": 20
       },
       "General": {
-        "FactionName": "Seraphim",
-        "Icon": "land",
         "UnitName": "Haas",
+        "Icon": "land",
+        "FactionName": "Seraphim",
         "Classification": "RULEUC_Resource"
       },
       "Defense": {
@@ -32819,7 +32822,7 @@
         "MassMult": 0.9
       },
       "Intel": {
-        "VisionRadius": 20
+        "VisionRadius": 18
       },
       "Veteran": {
         "Level2": 12,
@@ -33391,33 +33394,8 @@
         "WEAKDIRECTFIRE",
         null
       ],
-      "Description": "Air Transport",
-      "Economy": {
-        "BuildTime": 2640,
-        "BuildCostEnergy": 13200,
-        "BuildCostMass": 330
-      },
-      "Physics": {
-        "MaxSpeed": 0.5,
-        "FuelRechargeRate": 70,
-        "Elevation": 9,
-        "FuelUseTime": 800
-      },
       "StrategicIconName": "icon_gunship2_transport",
-      "Air": {
-        "MaxAirspeed": 14.5
-      },
-      "Defense": {
-        "Health": 1625
-      },
       "Id": "XSA0104",
-      "Wreckage": {
-        "HealthMult": 0.9,
-        "MassMult": 0.9
-      },
-      "Intel": {
-        "VisionRadius": 32
-      },
       "Veteran": {
         "Level2": 6,
         "Level3": 9,
@@ -33425,19 +33403,44 @@
         "Level4": 12,
         "Level5": 15
       },
+      "Description": "Air Transport",
+      "Economy": {
+        "BuildTime": 2640,
+        "BuildCostEnergy": 13200,
+        "BuildCostMass": 330
+      },
+      "Air": {
+        "MaxAirspeed": 14.5
+      },
+      "Defense": {
+        "Health": 1625
+      },
+      "Physics": {
+        "MaxSpeed": 0.5,
+        "FuelRechargeRate": 70,
+        "Elevation": 9,
+        "FuelUseTime": 800
+      },
+      "Wreckage": {
+        "HealthMult": 0.9,
+        "MassMult": 0.9
+      },
       "General": {
         "UnitName": "Vishala",
         "Icon": "air",
         "FactionName": "Seraphim",
         "Classification": "RULEUC_MilitaryAircraft"
       },
+      "Intel": {
+        "VisionRadius": 32
+      },
+      "BuildIconSortPriority": 40,
       "Display": {
         "Abilities": [
           "Anti-Air",
           "Transport"
         ]
       },
-      "BuildIconSortPriority": 40,
       "Weapon": [
         {
           "RateOfFire": 2,
@@ -34548,7 +34551,7 @@
           "MinRadius": 50,
           "MaxRadius": 115,
           "ProjectileId": "/projectiles/SIFZthuthaamArtilleryShell02/SIFZthuthaamArtilleryShell02_proj.bp",
-          "MuzzleVelocity": 26.13,
+          "MuzzleVelocity": 27.8,
           "RackFireTogether": false,
           "RackSalvoChargeTime": 0,
           "TurretYaw": 0,
@@ -35508,12 +35511,12 @@
           ],
           "Damage": 50,
           "DamageType": "Normal",
-          "TurretPitch": 0,
+          "TurretPitch": 25,
           "TurretPitchRange": 85,
           "DisplayName": "Losaare AA Autocannon",
           "TurretPitchSpeed": 180,
           "WeaponCategory": "Anti Air",
-          "ProjectileId": "/projectiles/SAALosaareAutoCannon03/SAALosaareAutoCannon03_proj.bp",
+          "ProjectileId": "/projectiles/SAALosaareAutoCannon01/SAALosaareAutoCannon01_proj.bp",
           "MuzzleVelocity": 90,
           "RackFireTogether": false,
           "RackSalvoChargeTime": 0,
@@ -35720,7 +35723,7 @@
           "TurretPitchRange": 15,
           "DisplayName": "Thau Cannon",
           "TurretPitchSpeed": 30,
-          "WeaponCategory": "Indirect Fire",
+          "WeaponCategory": "Direct Fire",
           "ProjectileId": "/projectiles/SDFTauCannon01/SDFTauCannon01_proj.bp",
           "MuzzleVelocity": 40,
           "RackFireTogether": false,
@@ -36339,13 +36342,13 @@
           ],
           "Damage": 60,
           "DamageType": "Normal",
-          "TurretPitch": 0,
+          "TurretPitch": 25,
           "TurretPitchRange": 80,
           "DisplayName": "Losaare AA Autocannon",
           "TurretPitchSpeed": 180,
           "WeaponCategory": "Anti Air",
           "ProjectileId": "/projectiles/SAALosaareAutoCannon03/SAALosaareAutoCannon03_proj.bp",
-          "MuzzleVelocity": 90,
+          "MuzzleVelocity": 100,
           "RackFireTogether": false,
           "RackSalvoChargeTime": 0,
           "MuzzleSalvoSize": 2,
@@ -37931,7 +37934,7 @@
             }
           ],
           "Damage": 11000,
-          "DamageType": "OtheTacticalBomb",
+          "DamageType": "Normal",
           "DisplayName": "Othe Tactical Bomb",
           "WeaponCategory": "Bomb",
           "ProjectileId": "/projectiles/SBOOhwalliStrategicBomb01/SBOOhwalliStrategicBomb01_proj.bp",
@@ -38449,19 +38452,19 @@
         "BUILTBYTIER1FACTORY",
         "BUILTBYTIER2FACTORY",
         "BUILTBYTIER3FACTORY",
-        "CONSTRUCTION",
         "CAPTURE",
+        "CONSTRUCTION",
         "ENGINEER",
         "HOVER",
         "LAND",
         "MOBILE",
         "NOMADS",
-        "REPAIR",
-        "RECLAIM",
         "PATROLHELPER",
+        "RECLAIM",
         "RECLAIMABLE",
-        "SHOWQUEUE",
+        "REPAIR",
         "SELECTABLE",
+        "SHOWQUEUE",
         "TECH1",
         "VISIBLETORECON",
         "RULEUTL_Basic"
@@ -38473,6 +38476,7 @@
         "Icon": "amph"
       },
       "BuildIconSortPriority": 10,
+      "StrategicIconName": "icon_land1_engineer",
       "Physics": {
         "TurnRate": 120,
         "Elevation": 0.2,
@@ -38496,7 +38500,6 @@
           "Engineering Suite"
         ]
       },
-      "StrategicIconName": "icon_land1_engineer",
       "Economy": {
         "StorageMass": 10,
         "BuildCostEnergy": 260,
@@ -38671,6 +38674,9 @@
         "UnitName": "Echo 1",
         "FactionName": "Nomads"
       },
+      "Physics": {
+        "TurnRate": 0
+      },
       "Economy": {
         "BuildTime": 127.5,
         "MaintenanceConsumptionPerSecondEnergy": 20,
@@ -38690,9 +38696,6 @@
       "Wreckage": {
         "HealthMult": 0.9,
         "MassMult": 0.9
-      },
-      "Physics": {
-        "TurnRate": 0
       },
       "Display": {
         "Abilities": [
@@ -38795,11 +38798,16 @@
           "Level5": 5
         }
       },
-      "StrategicIconName": "icon_sub1_antinavy",
       "Physics": {
         "Elevation": -1.5,
         "MaxSpeed": 6,
         "TurnRate": 80
+      },
+      "StrategicIconName": "icon_sub1_antinavy",
+      "Economy": {
+        "BuildTime": 1440,
+        "BuildCostEnergy": 2880,
+        "BuildCostMass": 360
       },
       "Intel": {
         "SonarRadius": 60,
@@ -38834,11 +38842,6 @@
           "Submersible",
           "Torpedoes"
         ]
-      },
-      "Economy": {
-        "BuildTime": 1440,
-        "BuildCostEnergy": 2880,
-        "BuildCostMass": 360
       },
       "Weapon": [
         {
@@ -38886,9 +38889,9 @@
         "MOBILE",
         "NOMADS",
         "OVERLAYANTIAIR",
+        "RECLAIMABLE",
         "SELECTABLE",
         "TECH1",
-        "RECLAIMABLE",
         "VISIBLETORECON",
         "RULEUTL_Basic"
       ],
@@ -38999,10 +39002,10 @@
     },
     {
       "Categories": [
+        "BUILTBYCOMMANDER",
         "BUILTBYTIER1ENGINEER",
         "BUILTBYTIER2ENGINEER",
         "BUILTBYTIER3ENGINEER",
-        "BUILTBYCOMMANDER",
         "CONSTRUCTION",
         "DRAGBUILD",
         "FACTORY",
@@ -39026,9 +39029,6 @@
         "Icon": "sea"
       },
       "StrategicIconName": "icon_factory1_naval",
-      "Physics": {
-        "TurnRate": 0
-      },
       "Economy": {
         "StorageMass": 80,
         "BuildCostEnergy": 1500,
@@ -39040,6 +39040,9 @@
       "Defense": {
         "RegenRate": 0,
         "Health": 3200
+      },
+      "Physics": {
+        "TurnRate": 0
       },
       "Id": "XNB0103",
       "Wreckage": {
@@ -39062,8 +39065,8 @@
         "BUILTBYTIER2FACTORY",
         "BUILTBYTIER3FACTORY",
         "DIRECTFIRE",
-        "LAND",
         "HOVER",
+        "LAND",
         "MOBILE",
         "NOMADS",
         "OVERLAYDIRECTFIRE",
@@ -39084,29 +39087,19 @@
           "Level5": 5
         }
       },
-      "General": {
-        "Classification": "RULEUC_MilitaryVehicle",
-        "FactionName": "Nomads",
-        "Icon": "amph",
-        "UnitName": "Grasshopper"
+      "StrategicIconName": "icon_bot1_directfire",
+      "Physics": {
+        "TurnRate": 310,
+        "Elevation": 0.23,
+        "MaxSpeed": 3.6
       },
       "BuildIconSortPriority": 30,
-      "Economy": {
-        "BuildTime": 140,
-        "BuildCostEnergy": 165,
-        "BuildCostMass": 42
-      },
       "Intel": {
         "VisionRadius": 18
       },
       "Defense": {
         "Health": 120,
         "RegenRate": 0
-      },
-      "Physics": {
-        "TurnRate": 310,
-        "Elevation": 0.23,
-        "MaxSpeed": 3.6
       },
       "Id": "XNL0106",
       "Wreckage": {
@@ -39120,12 +39113,22 @@
         "Level4": 8,
         "Level5": 10
       },
+      "General": {
+        "Classification": "RULEUC_MilitaryVehicle",
+        "FactionName": "Nomads",
+        "Icon": "amph",
+        "UnitName": "Grasshopper"
+      },
       "Display": {
         "Abilities": [
           "Hover"
         ]
       },
-      "StrategicIconName": "icon_bot1_directfire",
+      "Economy": {
+        "BuildTime": 140,
+        "BuildCostEnergy": 165,
+        "BuildCostMass": 42
+      },
       "Weapon": [
         {
           "RateOfFire": 2.5,
@@ -39179,7 +39182,11 @@
         "RULEUTL_Basic"
       ],
       "Description": "Artillery Boat",
-      "BuildIconSortPriority": 30,
+      "Economy": {
+        "BuildTime": 1350,
+        "BuildCostEnergy": 2400,
+        "BuildCostMass": 240
+      },
       "Buffs": {
         "Regen": {
           "Level2": 2,
@@ -39189,25 +39196,14 @@
           "Level5": 5
         }
       },
-      "General": {
-        "Classification": "RULEUC_MilitaryShip",
-        "FactionName": "Nomads",
-        "Icon": "sea",
-        "UnitName": "Defender Class"
-      },
       "StrategicIconName": "icon_ship1_antiair",
-      "Economy": {
-        "BuildTime": 1350,
-        "BuildCostEnergy": 2400,
-        "BuildCostMass": 240
+      "Physics": {
+        "TurnRate": 60,
+        "MaxSpeed": 6
       },
       "Defense": {
         "Health": 1550,
         "RegenRate": 0
-      },
-      "Physics": {
-        "TurnRate": 60,
-        "MaxSpeed": 6
       },
       "Id": "XNS0102",
       "Wreckage": {
@@ -39224,15 +39220,22 @@
         "Level4": 24,
         "Level5": 30
       },
+      "General": {
+        "Classification": "RULEUC_MilitaryShip",
+        "FactionName": "Nomads",
+        "Icon": "sea",
+        "UnitName": "Defender Class"
+      },
       "Display": {
         "Abilities": [
           "Anti-Air"
         ]
       },
+      "BuildIconSortPriority": 30,
       "Weapon": [
         {
           "TurretYawRange": 180,
-          "RateOfFire": 3,
+          "RateOfFire": 3.3333333333333,
           "TurretYaw": 0,
           "RackBones": [
             {
@@ -39414,17 +39417,21 @@
         "OVERLAYDIRECTFIRE",
         "OVERLAYRADAR",
         "OVERLAYSONAR",
-        "RECLAIMABLE",
         "RADAR",
+        "RECLAIMABLE",
         "SELECTABLE",
-        "SONAR",
         "SNIPEMODE",
+        "SONAR",
         "TECH1",
         "VISIBLETORECON",
         "RULEUTL_Basic"
       ],
       "Description": "Frigate",
-      "BuildIconSortPriority": 30,
+      "Economy": {
+        "BuildTime": 1350,
+        "BuildCostEnergy": 2700,
+        "BuildCostMass": 270
+      },
       "Buffs": {
         "Regen": {
           "Level2": 2,
@@ -39434,25 +39441,14 @@
           "Level5": 5
         }
       },
-      "General": {
-        "Classification": "RULEUC_MilitaryShip",
-        "FactionName": "Nomads",
-        "Icon": "sea",
-        "UnitName": "Lance Class"
-      },
       "StrategicIconName": "icon_ship1_intel",
-      "Economy": {
-        "BuildTime": 1350,
-        "BuildCostEnergy": 2700,
-        "BuildCostMass": 270
+      "Physics": {
+        "TurnRate": 60,
+        "MaxSpeed": 6
       },
       "Defense": {
         "Health": 1750,
         "RegenRate": 0
-      },
-      "Physics": {
-        "TurnRate": 60,
-        "MaxSpeed": 6
       },
       "Id": "XNS0103",
       "Wreckage": {
@@ -39472,12 +39468,19 @@
         "Level4": 24,
         "Level5": 30
       },
+      "General": {
+        "Classification": "RULEUC_MilitaryShip",
+        "FactionName": "Nomads",
+        "Icon": "sea",
+        "UnitName": "Lance Class"
+      },
       "Display": {
         "Abilities": [
           "Radar",
           "Sonar"
         ]
       },
+      "BuildIconSortPriority": 30,
       "Weapon": [
         {
           "FiringRandomness": 0,
@@ -39812,7 +39815,7 @@
       "Display": {},
       "Weapon": [
         {
-          "RateOfFire": 0.67,
+          "RateOfFire": 0.66666666666667,
           "ProjectilesPerOnFire": 1,
           "TurretYaw": 0,
           "RackBones": [
@@ -40033,12 +40036,12 @@
       "Intel": {
         "VisionRadius": 32
       },
+      "StrategicIconName": "icon_gunship1_transport",
       "Economy": {
         "BuildTime": 800,
         "BuildCostEnergy": 4000,
         "BuildCostMass": 80
       },
-      "StrategicIconName": "icon_gunship1_transport",
       "Display": {
         "Abilities": [
           "Transport"
@@ -40149,7 +40152,7 @@
       "BuildIconSortPriority": 50,
       "Weapon": [
         {
-          "RateOfFire": 3,
+          "RateOfFire": 3.3333333333333,
           "TurretYaw": 0,
           "RackBones": [
             {
@@ -40181,7 +40184,7 @@
         {
           "DamageRadius": 0.5,
           "FiringRandomness": 0,
-          "RateOfFire": 0.6,
+          "RateOfFire": 0.58823529411765,
           "ProjectilesPerOnFire": 1,
           "TurretYaw": 0,
           "RackBones": [
@@ -40416,9 +40419,9 @@
     {
       "Categories": [
         "BUILTBYTIER1ENGINEER",
+        "BUILTBYTIER2COMMANDER",
         "BUILTBYTIER2ENGINEER",
         "BUILTBYTIER3ENGINEER",
-        "BUILTBYTIER2COMMANDER",
         "DRAGBUILD",
         "ECONOMIC",
         "MASSSTORAGE",
@@ -40449,14 +40452,14 @@
         "BuildCostEnergy": 1500,
         "BuildCostMass": 200
       },
+      "Physics": {
+        "TurnRate": 0
+      },
       "Defense": {
         "RegenRate": 0,
         "Health": 600
       },
       "Id": "XNB1106",
-      "Physics": {
-        "TurnRate": 0
-      },
       "Display": {},
       "BuildIconSortPriority": 60
     },
@@ -40470,17 +40473,20 @@
         "ECONOMIC",
         "ENERGYPRODUCTION",
         "NOMADS",
-        "TECH1",
+        "RECLAIMABLE",
         "SELECTABLE",
         "SIZE4",
         "SORTECONOMY",
         "STRUCTURE",
-        "RECLAIMABLE",
+        "TECH1",
         "VISIBLETORECON",
         "RULEUTL_Basic"
       ],
       "Description": "Power Generator",
-      "BuildIconSortPriority": 70,
+      "StrategicIconName": "icon_structure1_energy",
+      "Physics": {
+        "TurnRate": 0
+      },
       "General": {
         "Classification": "RULEUC_Resource",
         "FactionName": "Nomads",
@@ -40491,9 +40497,6 @@
         "BuildCostMass": 75,
         "ProductionPerSecondEnergy": 20,
         "BuildCostEnergy": 750
-      },
-      "Physics": {
-        "TurnRate": 0
       },
       "Defense": {
         "RegenRate": 0,
@@ -40509,7 +40512,7 @@
           "Volatile"
         ]
       },
-      "StrategicIconName": "icon_structure1_energy",
+      "BuildIconSortPriority": 70,
       "Weapon": [
         {
           "Damage": 250,
@@ -40557,14 +40560,14 @@
         "ProductionPerSecondEnergy": 100,
         "BuildCostEnergy": 800
       },
+      "Physics": {
+        "TurnRate": 0
+      },
       "Defense": {
         "RegenRate": 0,
         "Health": 1400
       },
       "Id": "XNB1102",
-      "Physics": {
-        "TurnRate": 0
-      },
       "Display": {
         "Abilities": [
           "Amphibious"
@@ -40656,6 +40659,11 @@
         "RULEUTL_Basic"
       ],
       "Description": "Point Defense",
+      "Economy": {
+        "BuildTime": 250,
+        "BuildCostMass": 250,
+        "BuildCostEnergy": 2000
+      },
       "StrategicIconName": "icon_structure1_directfire",
       "Buffs": {
         "Regen": {
@@ -40668,11 +40676,6 @@
       },
       "Physics": {
         "TurnRate": 0
-      },
-      "Economy": {
-        "BuildTime": 250,
-        "BuildCostMass": 250,
-        "BuildCostEnergy": 2000
       },
       "Defense": {
         "Health": 1300,
@@ -40767,15 +40770,14 @@
           "Level5": 5
         }
       },
-      "StrategicIconName": "icon_structure1_antiair",
-      "General": {
-        "Classification": "RULEUC_MilitaryStructure",
-        "UnitName": "Slicer",
-        "Icon": "amph",
-        "FactionName": "Nomads"
-      },
       "Physics": {
         "TurnRate": 0
+      },
+      "StrategicIconName": "icon_structure1_antiair",
+      "Economy": {
+        "BuildTime": 188,
+        "BuildCostMass": 150,
+        "BuildCostEnergy": 1500
       },
       "Intel": {
         "VisionRadius": 24
@@ -40796,10 +40798,11 @@
         "Level4": 16,
         "Level5": 20
       },
-      "Economy": {
-        "BuildTime": 188,
-        "BuildCostMass": 150,
-        "BuildCostEnergy": 1500
+      "General": {
+        "Classification": "RULEUC_MilitaryStructure",
+        "UnitName": "Slicer",
+        "Icon": "amph",
+        "FactionName": "Nomads"
       },
       "Display": {
         "Abilities": [
@@ -40809,7 +40812,7 @@
       },
       "Weapon": [
         {
-          "RateOfFire": 3.5,
+          "RateOfFire": 3.3333333333333,
           "ProjectilesPerOnFire": 1,
           "TurretYaw": 0,
           "RackBones": [
@@ -40881,15 +40884,14 @@
           "Level5": 5
         }
       },
-      "StrategicIconName": "icon_structure1_antinavy",
-      "General": {
-        "Classification": "RULEUC_Resource",
-        "UnitName": "Sea Needle",
-        "Icon": "sea",
-        "FactionName": "Nomads"
-      },
       "Physics": {
         "TurnRate": 0
+      },
+      "StrategicIconName": "icon_structure1_antinavy",
+      "Economy": {
+        "BuildTime": 450,
+        "BuildCostMass": 450,
+        "BuildCostEnergy": 3600
       },
       "Intel": {
         "SonarRadius": 35,
@@ -40912,10 +40914,11 @@
         "Level4": 24,
         "Level5": 30
       },
-      "Economy": {
-        "BuildTime": 450,
-        "BuildCostMass": 450,
-        "BuildCostEnergy": 3600
+      "General": {
+        "Classification": "RULEUC_Resource",
+        "UnitName": "Sea Needle",
+        "Icon": "sea",
+        "FactionName": "Nomads"
       },
       "Display": {
         "Abilities": [
@@ -41017,10 +41020,10 @@
       "Categories": [
         "AIRSTAGINGPLATFORM",
         "BUILTBYTIER1ENGINEER",
-        "BUILTBYTIER2ENGINEER",
-        "BUILTBYTIER3ENGINEER",
         "BUILTBYTIER2COMMANDER",
+        "BUILTBYTIER2ENGINEER",
         "BUILTBYTIER3COMMANDER",
+        "BUILTBYTIER3ENGINEER",
         "CARRIER",
         "DRAGBUILD",
         "NOMADS",
@@ -41029,8 +41032,8 @@
         "SELECTABLE",
         "SIZE12",
         "SORTSTRATEGIC",
-        "STRUCTURE",
         "STRATEGIC",
+        "STRUCTURE",
         "TECH1",
         "VISIBLETORECON",
         "RULEUTL_Advanced"
@@ -41048,6 +41051,9 @@
         "Icon": "land",
         "UnitName": "Oasis"
       },
+      "Physics": {
+        "TurnRate": 0
+      },
       "Defense": {
         "Health": 500,
         "RegenRate": 0
@@ -41056,9 +41062,6 @@
       "Wreckage": {
         "HealthMult": 0.9,
         "MassMult": 0.9
-      },
-      "Physics": {
-        "TurnRate": 0
       },
       "Display": {
         "Abilities": [
@@ -41287,11 +41290,6 @@
         "Level5": 30
       },
       "Description": "Fighter/Bomber",
-      "Economy": {
-        "BuildTime": 2100,
-        "BuildCostEnergy": 7500,
-        "BuildCostMass": 325
-      },
       "Air": {
         "TurnSpeed": 1.5,
         "MaxAirspeed": 15,
@@ -41329,6 +41327,11 @@
       "Intel": {
         "RadarRadius": 65,
         "VisionRadius": 32
+      },
+      "Economy": {
+        "BuildTime": 2100,
+        "BuildCostEnergy": 7500,
+        "BuildCostMass": 325
       },
       "StrategicIconName": "icon_fighter2_directfire",
       "Display": {
@@ -41491,7 +41494,7 @@
       "BuildIconSortPriority": 20,
       "Weapon": [
         {
-          "RateOfFire": 0.334,
+          "RateOfFire": 0.33333333333333,
           "ProjectilesPerOnFire": 3,
           "TurretYaw": 0,
           "RackBones": [
@@ -41538,10 +41541,10 @@
       "Categories": [
         "AIR",
         "ANTINAVY",
-        "DIRECTFIRE",
-        "GROUNDATTACK",
         "BUILTBYTIER2FACTORY",
         "BUILTBYTIER3FACTORY",
+        "DIRECTFIRE",
+        "GROUNDATTACK",
         "MOBILE",
         "NOMADS",
         "OVERLAYDIRECTFIRE",
@@ -41726,7 +41729,7 @@
       "Weapon": [
         {
           "FiringRandomness": 0.4,
-          "RateOfFire": 0.17,
+          "RateOfFire": 0.16949152542373,
           "ProjectilesPerOnFire": 1,
           "TurretYaw": 0,
           "RackBones": [
@@ -41795,16 +41798,15 @@
           "Level5": 25
         }
       },
-      "StrategicIconName": "icon_ship2_directfire",
-      "General": {
-        "Classification": "RULEUC_MilitaryShip",
-        "FactionName": "Nomads",
-        "Icon": "sea",
-        "UnitName": "Nightstorm Class"
-      },
       "Physics": {
         "TurnRate": 50,
         "MaxSpeed": 5
+      },
+      "StrategicIconName": "icon_ship2_directfire",
+      "Economy": {
+        "BuildTime": 10000,
+        "BuildCostEnergy": 15000,
+        "BuildCostMass": 2250
       },
       "Intel": {
         "SonarRadius": 37,
@@ -41828,10 +41830,11 @@
         "Level4": 64,
         "Level5": 80
       },
-      "Economy": {
-        "BuildTime": 10000,
-        "BuildCostEnergy": 15000,
-        "BuildCostMass": 2250
+      "General": {
+        "Classification": "RULEUC_MilitaryShip",
+        "FactionName": "Nomads",
+        "Icon": "sea",
+        "UnitName": "Nightstorm Class"
       },
       "Display": {
         "Abilities": [
@@ -41989,10 +41992,15 @@
           "Level5": 10
         }
       },
-      "StrategicIconName": "icon_ship2_antiair",
       "Physics": {
         "TurnRate": 40,
         "MaxSpeed": 4.5
+      },
+      "StrategicIconName": "icon_ship2_antiair",
+      "Economy": {
+        "BuildTime": 8000,
+        "BuildCostEnergy": 18000,
+        "BuildCostMass": 2000
       },
       "Intel": {
         "SonarRadius": 120,
@@ -42028,11 +42036,6 @@
           "Radar",
           "Sonar"
         ]
-      },
-      "Economy": {
-        "BuildTime": 8000,
-        "BuildCostEnergy": 18000,
-        "BuildCostMass": 2000
       },
       "Weapon": [
         {
@@ -42225,17 +42228,17 @@
         "CONSTRUCTIONSORTDOWN",
         "DRAGBUILD",
         "FACTORY",
-        "NOMADS",
         "NAVAL",
-        "TECH2",
+        "NOMADS",
         "RALLYPOINT",
-        "SIZE16",
-        "SELECTABLE",
-        "SHOWQUEUE",
-        "SORTCONSTRUCTION",
-        "STRUCTURE",
         "RECLAIMABLE",
         "RESEARCH",
+        "SELECTABLE",
+        "SHOWQUEUE",
+        "SIZE16",
+        "SORTCONSTRUCTION",
+        "STRUCTURE",
+        "TECH2",
         "VISIBLETORECON",
         "RULEUTL_Advanced"
       ],
@@ -42291,8 +42294,8 @@
         "RECLAIMABLE",
         "SELECTABLE",
         "SHOWQUEUE",
-        "SORTECONOMY",
         "SIZE4",
+        "SORTECONOMY",
         "STRUCTURE",
         "TECH2",
         "VISIBLETORECON",
@@ -42470,7 +42473,6 @@
         "DRAGBUILD",
         "FACTORY",
         "NOMADS",
-        "TECH2",
         "RALLYPOINT",
         "RECLAIMABLE",
         "RESEARCH",
@@ -42479,6 +42481,7 @@
         "SIZE16",
         "SORTCONSTRUCTION",
         "STRUCTURE",
+        "TECH2",
         "VISIBLETORECON",
         "RULEUTL_Advanced"
       ],
@@ -42583,7 +42586,6 @@
     },
     {
       "Categories": [
-        "SELECTABLE",
         "BUILTBYTIER1FACTORY",
         "CONSTRUCTION",
         "CONSTRUCTIONSORTDOWN",
@@ -42592,8 +42594,9 @@
         "LAND",
         "NOMADS",
         "RALLYPOINT",
-        "RESEARCH",
         "RECLAIMABLE",
+        "RESEARCH",
+        "SELECTABLE",
         "SHOWQUEUE",
         "SIZE16",
         "SORTCONSTRUCTION",
@@ -42641,13 +42644,13 @@
     },
     {
       "Categories": [
+        "BUILTBYTIER2COMMANDER",
         "BUILTBYTIER2ENGINEER",
         "BUILTBYTIER3ENGINEER",
-        "BUILTBYTIER2COMMANDER",
         "DRAGBUILD",
-        "NOMADS",
         "ECONOMIC",
         "ENERGYPRODUCTION",
+        "NOMADS",
         "RECLAIMABLE",
         "SELECTABLE",
         "SIZE12",
@@ -42659,16 +42662,15 @@
         "RULEUTL_Advanced"
       ],
       "Description": "Power Generator",
-      "BuildIconSortPriority": 70,
       "StrategicIconName": "icon_structure2_energy",
+      "Physics": {
+        "TurnRate": 0
+      },
       "General": {
         "Classification": "RULEUC_Resource",
         "UnitName": "Antimatter Reactor",
         "Icon": "land",
         "FactionName": "Nomads"
-      },
-      "Physics": {
-        "TurnRate": 0
       },
       "Economy": {
         "BuildTime": 2198,
@@ -42693,6 +42695,7 @@
           "Volatile"
         ]
       },
+      "BuildIconSortPriority": 70,
       "Weapon": [
         {
           "Damage": 1500,
@@ -42834,7 +42837,7 @@
       "Weapon": [
         {
           "DamageRadius": 3,
-          "RateOfFire": 1.111,
+          "RateOfFire": 1.1111111111111,
           "ProjectilesPerOnFire": 2,
           "TurretYaw": 0,
           "RackBones": [
@@ -42887,9 +42890,9 @@
         "OVERLAYINDIRECTFIRE",
         "RECLAIMABLE",
         "SELECTABLE",
+        "SHOWATTACKRETICLE",
         "SILO",
         "SNIPEMODE",
-        "SHOWATTACKRETICLE",
         "TECH2",
         "VISIBLETORECON",
         "RULEUTL_Advanced"
@@ -42999,10 +43002,10 @@
     },
     {
       "Categories": [
-        "BUILTBYTIER2ENGINEER",
-        "BUILTBYTIER3ENGINEER",
         "BUILTBYTIER2COMMANDER",
+        "BUILTBYTIER2ENGINEER",
         "BUILTBYTIER3COMMANDER",
+        "BUILTBYTIER3ENGINEER",
         "CQUEMOV",
         "DEFENSE",
         "DIRECTFIRE",
@@ -43229,11 +43232,11 @@
         "NOMADS",
         "OVERLAYANTIAIR",
         "RECLAIMABLE",
-        "TECH2",
         "SELECTABLE",
         "SIZE4",
-        "STRUCTURE",
         "SORTDEFENSE",
+        "STRUCTURE",
+        "TECH2",
         "VISIBLETORECON",
         "RULEUTL_Advanced"
       ],
@@ -43248,15 +43251,14 @@
           "Level5": 10
         }
       },
-      "StrategicIconName": "icon_structure2_antiair",
-      "General": {
-        "Classification": "RULEUC_MilitaryStructure",
-        "UnitName": "Skythorn",
-        "Icon": "amph",
-        "FactionName": "Nomads"
-      },
       "Physics": {
         "TurnRate": 0
+      },
+      "StrategicIconName": "icon_structure2_antiair",
+      "Economy": {
+        "BuildTime": 540,
+        "BuildCostMass": 400,
+        "BuildCostEnergy": 4000
       },
       "Intel": {
         "VisionRadius": 24
@@ -43277,10 +43279,11 @@
         "Level4": 32,
         "Level5": 40
       },
-      "Economy": {
-        "BuildTime": 540,
-        "BuildCostMass": 400,
-        "BuildCostEnergy": 4000
+      "General": {
+        "Classification": "RULEUC_MilitaryStructure",
+        "UnitName": "Skythorn",
+        "Icon": "amph",
+        "FactionName": "Nomads"
       },
       "Display": {
         "Abilities": [
@@ -43362,9 +43365,14 @@
           "Level5": 10
         }
       },
-      "StrategicIconName": "icon_structure2_antinavy",
       "Physics": {
         "TurnRate": 0
+      },
+      "StrategicIconName": "icon_structure2_antinavy",
+      "Economy": {
+        "BuildTime": 1446,
+        "BuildCostMass": 1080,
+        "BuildCostEnergy": 9000
       },
       "Intel": {
         "SonarRadius": 35,
@@ -43399,11 +43407,6 @@
           "Personal Stealth",
           "Underwater Railgun"
         ]
-      },
-      "Economy": {
-        "BuildTime": 1446,
-        "BuildCostMass": 1080,
-        "BuildCostEnergy": 9000
       },
       "Weapon": [
         {
@@ -43567,8 +43570,8 @@
         "SILO",
         "SIZE4",
         "SORTSTRATEGIC",
-        "STRUCTURE",
         "STRATEGIC",
+        "STRUCTURE",
         "TACTICALMISSILEPLATFORM",
         "TECH2",
         "VISIBLETORECON",
@@ -43628,7 +43631,7 @@
       "Weapon": [
         {
           "DamageRadius": 2,
-          "RateOfFire": 3,
+          "RateOfFire": 3.3333333333333,
           "TurretYaw": 0,
           "ForceSingleFire": true,
           "RackBones": [
@@ -43683,7 +43686,10 @@
         "RULEUTL_Advanced"
       ],
       "Description": "Tactical Missile Defense",
-      "BuildIconSortPriority": 155,
+      "StrategicIconName": "icon_structure2_antimissile",
+      "Physics": {
+        "TurnRate": 0
+      },
       "General": {
         "Classification": "RULEUC_MilitaryStructure",
         "UnitName": "Arc Aegis",
@@ -43694,9 +43700,6 @@
         "BuildTime": 400,
         "BuildCostMass": 280,
         "BuildCostEnergy": 3200
-      },
-      "Physics": {
-        "TurnRate": 0
       },
       "Defense": {
         "Health": 1000,
@@ -43716,7 +43719,7 @@
           "Tactical Missile Defense"
         ]
       },
-      "StrategicIconName": "icon_structure2_antimissile",
+      "BuildIconSortPriority": 155,
       "Weapon": [
         {
           "RateOfFire": 10,
@@ -43870,6 +43873,9 @@
         "UnitName": "Trickster",
         "FactionName": "Nomads"
       },
+      "Physics": {
+        "TurnRate": 0
+      },
       "Economy": {
         "BuildTime": 2000,
         "BuildCostMass": 1400,
@@ -43895,9 +43901,6 @@
       "Wreckage": {
         "HealthMult": 0.9,
         "MassMult": 0.9
-      },
-      "Physics": {
-        "TurnRate": 0
       },
       "Display": {
         "Abilities": [
@@ -43998,6 +44001,9 @@
         "UnitName": "Echo 2",
         "FactionName": "Nomads"
       },
+      "Physics": {
+        "TurnRate": 0
+      },
       "Economy": {
         "BuildTime": 1680,
         "MaintenanceConsumptionPerSecondEnergy": 100,
@@ -44017,9 +44023,6 @@
       "Wreckage": {
         "HealthMult": 0.9,
         "MassMult": 0.9
-      },
-      "Physics": {
-        "TurnRate": 0
       },
       "Display": {
         "Abilities": [
@@ -44051,7 +44054,12 @@
         "RULEUTL_Secret"
       ],
       "Description": "Engineer",
-      "BuildIconSortPriority": 10,
+      "StrategicIconName": "icon_land3_engineer",
+      "Physics": {
+        "TurnRate": 120,
+        "Elevation": 0.55,
+        "MaxSpeed": 1.9
+      },
       "Economy": {
         "StorageMass": 40,
         "BuildCostEnergy": 1560,
@@ -44064,11 +44072,6 @@
         "Classification": "RULEUC_Engineer",
         "FactionName": "Nomads",
         "Icon": "amph"
-      },
-      "Physics": {
-        "TurnRate": 120,
-        "Elevation": 0.55,
-        "MaxSpeed": 1.9
       },
       "Defense": {
         "Health": 640,
@@ -44088,7 +44091,7 @@
           "Hover"
         ]
       },
-      "StrategicIconName": "icon_land3_engineer"
+      "BuildIconSortPriority": 10
     },
     {
       "Categories": [
@@ -44169,9 +44172,9 @@
           "BuildCostEnergy": 24100,
           "BuildTime": 2000,
           "Name": "Extra Barrel",
+          "Icon": "acu",
           "NewMaxRadius": 30,
           "BuildCostMass": 750,
-          "Icon": "acu",
           "NewRateOfFire": 1.3
         },
         "PowerArmor": {
@@ -44453,7 +44456,11 @@
         "RULEUTL_Secret"
       ],
       "Description": "Tactical Submarine",
-      "BuildIconSortPriority": 15,
+      "Economy": {
+        "BuildTime": 16000,
+        "BuildCostEnergy": 50000,
+        "BuildCostMass": 5000
+      },
       "Buffs": {
         "Regen": {
           "Level2": 6,
@@ -44463,26 +44470,15 @@
           "Level5": 15
         }
       },
-      "General": {
-        "Classification": "RULEUC_MilitaryShip",
-        "FactionName": "Nomads",
-        "Icon": "sea",
-        "UnitName": "Leviathan"
-      },
       "StrategicIconName": "icon_sub3_missile",
-      "Economy": {
-        "BuildTime": 16000,
-        "BuildCostEnergy": 50000,
-        "BuildCostMass": 5000
-      },
-      "Defense": {
-        "Health": 4000,
-        "RegenRate": 0
-      },
       "Physics": {
         "Elevation": -1.5,
         "MaxSpeed": 4,
         "TurnRate": 80
+      },
+      "Defense": {
+        "Health": 4000,
+        "RegenRate": 0
       },
       "Id": "XNS0304",
       "Wreckage": {
@@ -44501,6 +44497,12 @@
         "Level4": 64,
         "Level5": 80
       },
+      "General": {
+        "Classification": "RULEUC_MilitaryShip",
+        "FactionName": "Nomads",
+        "Icon": "sea",
+        "UnitName": "Leviathan"
+      },
       "Display": {
         "Abilities": [
           "Sonar",
@@ -44508,6 +44510,7 @@
           "Torpedoes"
         ]
       },
+      "BuildIconSortPriority": 15,
       "Weapon": [
         {
           "DamageRadius": 4,
@@ -44595,7 +44598,6 @@
     },
     {
       "Categories": [
-        "SELECTABLE",
         "BUILTBYTIER3FACTORY",
         "DIRECTFIRE",
         "LAND",
@@ -44603,6 +44605,7 @@
         "NOMADS",
         "OVERLAYDIRECTFIRE",
         "RECLAIMABLE",
+        "SELECTABLE",
         "TANK",
         "TECH3",
         "VISIBLETORECON",
@@ -44937,10 +44940,10 @@
         "OVERLAYSONAR",
         "RADAR",
         "RECLAIMABLE",
-        "SHOWATTACKRETICLE",
-        "SONAR",
         "SELECTABLE",
+        "SHOWATTACKRETICLE",
         "SNIPEMODE",
+        "SONAR",
         "TECH3",
         "VISIBLETORECON",
         "RULEUTL_Secret"
@@ -44956,10 +44959,15 @@
           "Level5": 25
         }
       },
-      "StrategicIconName": "icon_ship3_directfire",
       "Physics": {
         "MaxSpeed": 3.2,
         "TurnRate": 35
+      },
+      "StrategicIconName": "icon_ship3_directfire",
+      "Economy": {
+        "BuildTime": 28800,
+        "BuildCostEnergy": 54000,
+        "BuildCostMass": 9000
       },
       "Intel": {
         "SonarRadius": 20,
@@ -44997,16 +45005,11 @@
           "Sonar"
         ]
       },
-      "Economy": {
-        "BuildTime": 28800,
-        "BuildCostEnergy": 54000,
-        "BuildCostMass": 9000
-      },
       "Weapon": [
         {
           "DamageRadius": 2,
           "FiringRandomness": 0.3,
-          "RateOfFire": 0.334,
+          "RateOfFire": 0.33333333333333,
           "ProjectilesPerOnFire": 3,
           "TurretYaw": 0,
           "RackBones": [
@@ -45153,11 +45156,6 @@
         "Level5": 60
       },
       "Description": "Air Superiority Fighter",
-      "Economy": {
-        "BuildTime": 3840,
-        "BuildCostEnergy": 51200,
-        "BuildCostMass": 450
-      },
       "Air": {
         "TurnSpeed": 1.9,
         "MaxAirspeed": 22,
@@ -45194,6 +45192,11 @@
       },
       "Intel": {
         "VisionRadius": 32
+      },
+      "Economy": {
+        "BuildTime": 3840,
+        "BuildCostEnergy": 51200,
+        "BuildCostMass": 450
       },
       "StrategicIconName": "icon_fighter3_antiair",
       "Display": {
@@ -45245,7 +45248,6 @@
     },
     {
       "Categories": [
-        "SELECTABLE",
         "BUILTBYTIER2FACTORY",
         "CONSTRUCTION",
         "CONSTRUCTIONSORTDOWN",
@@ -45256,6 +45258,7 @@
         "RALLYPOINT",
         "RECLAIMABLE",
         "RESEARCH",
+        "SELECTABLE",
         "SHOWQUEUE",
         "SIZE16",
         "SORTCONSTRUCTION",
@@ -45575,8 +45578,8 @@
     },
     {
       "Categories": [
-        "BUILTBYTIER3ENGINEER",
         "BUILTBYTIER3COMMANDER",
+        "BUILTBYTIER3ENGINEER",
         "DRAGBUILD",
         "ECONOMIC",
         "MASSEXTRACTION",
@@ -45695,7 +45698,7 @@
         {
           "DamageRadius": 3,
           "FiringRandomness": 1,
-          "RateOfFire": 0.067,
+          "RateOfFire": 0.067114093959732,
           "ProjectilesPerOnFire": 1,
           "TurretYaw": 0,
           "RackBones": [
@@ -45735,6 +45738,7 @@
         "BUILTBYTIER3FACTORY",
         "CARRIER",
         "DIRECTFIRE",
+        "EXTERNALFACTORY",
         "INTELLIGENCE",
         "MOBILE",
         "NAVAL",
@@ -45745,13 +45749,12 @@
         "OVERLAYMISC",
         "OVERLAYRADAR",
         "OVERLAYSONAR",
-        "TECH3",
         "RECLAIMABLE",
         "SELECTABLE",
         "SHOWATTACKRETICLE",
         "SHOWQUEUE",
+        "TECH3",
         "VISIBLETORECON",
-        "EXTERNALFACTORY",
         "RULEUTL_Secret"
       ],
       "Description": "Aircraft Carrier",
@@ -45764,6 +45767,12 @@
           "Level5": 25
         }
       },
+      "Economy": {
+        "BuildTime": 11600,
+        "BuildRate": 180,
+        "BuildCostEnergy": 38000,
+        "BuildCostMass": 3800
+      },
       "General": {
         "Classification": "RULEUC_MilitaryShip",
         "FactionName": "Nomads",
@@ -45771,10 +45780,6 @@
         "UnitName": "Mastodon Class"
       },
       "StrategicIconName": "icon_ship3_air",
-      "Physics": {
-        "TurnRate": 30,
-        "MaxSpeed": 3
-      },
       "Intel": {
         "SonarRadius": 40,
         "RadarRadius": 200,
@@ -45797,11 +45802,9 @@
         "Level4": 128,
         "Level5": 160
       },
-      "Economy": {
-        "BuildTime": 11600,
-        "BuildRate": 180,
-        "BuildCostEnergy": 38000,
-        "BuildCostMass": 3800
+      "Physics": {
+        "TurnRate": 30,
+        "MaxSpeed": 3
       },
       "Display": {
         "Abilities": [
@@ -45920,7 +45923,12 @@
         "VISIBLETORECON",
         "RULEUTL_Secret"
       ],
-      "Description": "Heavy Gunship",
+      "General": {
+        "Classification": "RULEUC_MilitaryAircraft",
+        "FactionName": "Nomads",
+        "Icon": "air",
+        "UnitName": "Hornet"
+      },
       "Buffs": {
         "Regen": {
           "Level2": 6,
@@ -45937,12 +45945,7 @@
         "Elevation": 10,
         "MaxSpeed": 10
       },
-      "General": {
-        "Classification": "RULEUC_MilitaryAircraft",
-        "FactionName": "Nomads",
-        "Icon": "air",
-        "UnitName": "Hornet"
-      },
+      "Description": "Heavy Gunship",
       "Air": {
         "MinAirspeed": 3,
         "MaxAirspeed": 10
@@ -46013,7 +46016,7 @@
         },
         {
           "DamageRadius": 0,
-          "RateOfFire": 0.33,
+          "RateOfFire": 0.33333333333333,
           "RackBones": [
             {
               "MuzzleBones": [
@@ -46106,8 +46109,8 @@
     },
     {
       "Categories": [
-        "BUILTBYTIER3ENGINEER",
         "BUILTBYTIER3COMMANDER",
+        "BUILTBYTIER3ENGINEER",
         "DRAGBUILD",
         "ECONOMIC",
         "MASSFABRICATION",
@@ -46118,8 +46121,8 @@
         "SIZE12",
         "SORTECONOMY",
         "STRUCTURE",
-        "VISIBLETORECON",
         "TECH3",
+        "VISIBLETORECON",
         "RULEUTL_Secret"
       ],
       "Description": "Mass Fabricator",
@@ -46225,23 +46228,23 @@
     },
     {
       "Categories": [
-        "SELECTABLE",
         "BUILTBYTIER2FACTORY",
-        "NOMADS",
-        "STRUCTURE",
-        "LAND",
-        "TECH3",
         "CONSTRUCTION",
-        "FACTORY",
-        "RALLYPOINT",
-        "DRAGBUILD",
         "CONSTRUCTIONSORTDOWN",
-        "SIZE16",
-        "VISIBLETORECON",
+        "DRAGBUILD",
+        "FACTORY",
+        "LAND",
+        "NOMADS",
+        "RALLYPOINT",
         "RECLAIMABLE",
-        "SHOWQUEUE",
-        "SORTCONSTRUCTION",
         "RESEARCH",
+        "SELECTABLE",
+        "SHOWQUEUE",
+        "SIZE16",
+        "SORTCONSTRUCTION",
+        "STRUCTURE",
+        "TECH3",
+        "VISIBLETORECON",
         "RULEUTL_Secret"
       ],
       "Description": "Land Factory HQ",
@@ -46296,15 +46299,14 @@
         "RULEUTL_Secret"
       ],
       "Description": "Power Generator",
-      "BuildIconSortPriority": 70,
       "StrategicIconName": "icon_structure3_energy",
+      "Physics": {},
       "General": {
         "Classification": "RULEUC_Resource",
         "UnitName": "Advanced Antimatter Reactor",
         "Icon": "land",
         "FactionName": "Nomads"
       },
-      "Physics": {},
       "Economy": {
         "BuildTime": 6824,
         "BuildCostMass": 3240,
@@ -46328,6 +46330,7 @@
           "Volatile"
         ]
       },
+      "BuildIconSortPriority": 70,
       "Weapon": [
         {
           "Damage": 5500,
@@ -46396,12 +46399,12 @@
     },
     {
       "Categories": [
+        "EXCLUDEINDOMINATION",
+        "INSIGNIFICANTUNIT",
+        "NOFORMATION",
         "NOMADS",
         "UNTARGETABLE",
-        "NOFORMATION",
-        "INSIGNIFICANTUNIT",
         "VISIBLETORECON",
-        "EXCLUDEINDOMINATION",
         "RULEUTL_Secret"
       ],
       "General": {
@@ -46510,16 +46513,16 @@
     {
       "Categories": [
         "ANTIAIR",
-        "BUILTBYTIER3ENGINEER",
         "BUILTBYTIER3COMMANDER",
+        "BUILTBYTIER3ENGINEER",
         "CQUEMOV",
         "DEFENSE",
         "DRAGBUILD",
         "NOMADS",
         "OVERLAYANTIAIR",
         "RECLAIMABLE",
-        "SIZE4",
         "SELECTABLE",
+        "SIZE4",
         "SORTDEFENSE",
         "STRUCTURE",
         "TECH3",
@@ -46527,7 +46530,11 @@
         "RULEUTL_Secret"
       ],
       "Description": "Anti-Air SAM Launcher",
-      "BuildIconSortPriority": 120,
+      "Economy": {
+        "BuildTime": 1400,
+        "BuildCostMass": 800,
+        "BuildCostEnergy": 8000
+      },
       "Buffs": {
         "Regen": {
           "Level2": 6,
@@ -46538,23 +46545,12 @@
         }
       },
       "StrategicIconName": "icon_structure3_antiair",
-      "General": {
-        "Classification": "RULEUC_MilitaryStructure",
-        "UnitName": "Vindicator",
-        "Icon": "amph",
-        "FactionName": "Nomads"
-      },
-      "Economy": {
-        "BuildTime": 1400,
-        "BuildCostMass": 800,
-        "BuildCostEnergy": 8000
+      "Physics": {
+        "TurnRate": 0
       },
       "Defense": {
         "Health": 5000,
         "RegenRate": 0
-      },
-      "Physics": {
-        "TurnRate": 0
       },
       "Id": "XNB4201",
       "Wreckage": {
@@ -46571,16 +46567,23 @@
         "Level4": 96,
         "Level5": 120
       },
+      "General": {
+        "Classification": "RULEUC_MilitaryStructure",
+        "UnitName": "Vindicator",
+        "Icon": "amph",
+        "FactionName": "Nomads"
+      },
       "Display": {
         "Abilities": [
           "Anti-Air",
           "Aquatic"
         ]
       },
+      "BuildIconSortPriority": 120,
       "Weapon": [
         {
           "DamageRadius": 1.5,
-          "RateOfFire": 0.28,
+          "RateOfFire": 0.27777777777778,
           "RackBones": [
             {
               "MuzzleBones": [
@@ -46640,15 +46643,15 @@
         "BUILTBYTIER3ENGINEER",
         "CQUEMOV",
         "DRAGBUILD",
-        "NOMADS",
         "INDIRECTFIRE",
+        "NOMADS",
         "OVERLAYINDIRECTFIRE",
         "RECLAIMABLE",
         "SELECTABLE",
         "SHOWATTACKRETICLE",
         "SIZE16",
-        "SORTSTRATEGIC",
         "SNIPEMODE",
+        "SORTSTRATEGIC",
         "STRATEGIC",
         "STRUCTURE",
         "TECH3",
@@ -46754,8 +46757,8 @@
         "SILO",
         "SIZE12",
         "SORTSTRATEGIC",
-        "STRUCTURE",
         "STRATEGIC",
+        "STRUCTURE",
         "TECH3",
         "VISIBLETORECON",
         "VOLATILE",
@@ -46945,7 +46948,7 @@
       "BuildIconSortPriority": 155,
       "Weapon": [
         {
-          "RateOfFire": 0.6,
+          "RateOfFire": 0.58823529411765,
           "ProjectilesPerOnFire": 1,
           "ForceSingleFire": true,
           "RackBones": [
@@ -46973,19 +46976,19 @@
     },
     {
       "Categories": [
-        "SELECTABLE",
-        "NOMADS",
-        "STRUCTURE",
-        "DEFENSE",
-        "TECH3",
-        "SHIELD",
-        "DRAGBUILD",
-        "SIZE12",
-        "VISIBLETORECON",
-        "RECLAIMABLE",
-        "OVERLAYDEFENSE",
-        "SORTDEFENSE",
         "CQUEMOV",
+        "DEFENSE",
+        "DRAGBUILD",
+        "NOMADS",
+        "OVERLAYDEFENSE",
+        "RECLAIMABLE",
+        "SELECTABLE",
+        "SHIELD",
+        "SIZE12",
+        "SORTDEFENSE",
+        "STRUCTURE",
+        "TECH3",
+        "VISIBLETORECON",
         "RULEUTL_Secret"
       ],
       "Description": "Heavy Shield Generator",
@@ -47050,8 +47053,8 @@
         "SIZE12",
         "SORTDEFENSE",
         "SORTINTEL",
-        "STRUCTURE",
         "STEALTHFIELD",
+        "STRUCTURE",
         "TECH3",
         "VISIBLETORECON",
         "RULEUTL_Secret"
@@ -47063,6 +47066,9 @@
         "Classification": "RULEUC_CounterMeasure",
         "UnitName": "Illusionist",
         "FactionName": "Nomads"
+      },
+      "Physics": {
+        "TurnRate": 0
       },
       "Economy": {
         "BuildTime": 5000,
@@ -47088,9 +47094,6 @@
       "Wreckage": {
         "HealthMult": 0.9,
         "MassMult": 0.9
-      },
-      "Physics": {
-        "TurnRate": 0
       },
       "Display": {
         "Abilities": [
@@ -47191,6 +47194,9 @@
         "UnitName": "Sybil 3",
         "FactionName": "Nomads"
       },
+      "Physics": {
+        "TurnRate": 0
+      },
       "Economy": {
         "BuildTime": 2575,
         "MaintenanceConsumptionPerSecondEnergy": 2000,
@@ -47210,9 +47216,6 @@
         "HealthMult": 0.9,
         "MassMult": 0.9
       },
-      "Physics": {
-        "TurnRate": 0
-      },
       "Display": {
         "Abilities": [
           "EMP Weapon",
@@ -47225,8 +47228,8 @@
     },
     {
       "Categories": [
-        "BUILTBYTIER3ENGINEER",
         "BUILTBYTIER3COMMANDER",
+        "BUILTBYTIER3ENGINEER",
         "DRAGBUILD",
         "FACTORY",
         "GATE",
@@ -47257,6 +47260,9 @@
         "BuildCostEnergy": 30000,
         "BuildCostMass": 3000
       },
+      "Physics": {
+        "TurnRate": 0
+      },
       "Defense": {
         "Health": 10000,
         "RegenRate": 0
@@ -47265,9 +47271,6 @@
       "Wreckage": {
         "HealthMult": 0.9,
         "MassMult": 0.9
-      },
-      "Physics": {
-        "TurnRate": 0
       },
       "Intel": {
         "VisionRadius": 20
@@ -47280,8 +47283,8 @@
         "BUILTBYTIER3COMMANDER",
         "BUILTBYTIER3ENGINEER",
         "CQUEMOV",
-        "DRAGBUILD",
         "DIRECTFIRE",
+        "DRAGBUILD",
         "EXPERIMENTAL",
         "HOVER",
         "LAND",
@@ -47289,9 +47292,9 @@
         "NEEDMOBILEBUILD",
         "NOMADS",
         "OVERLAYDIRECTFIRE",
-        "TRANSPORTABLEEXP",
         "SELECTABLE",
         "SNIPEMODE",
+        "TRANSPORTABLEEXP",
         "VISIBLETORECON",
         "RULEUTL_Experimental"
       ],
@@ -47310,12 +47313,16 @@
           "Level5": 40
         }
       },
-      "Description": "Experimental Assault Tank",
-      "StrategicIconName": "icon_experimental_generic",
       "Physics": {
         "TurnRate": 40,
         "Elevation": 0,
         "MaxSpeed": 2.5
+      },
+      "StrategicIconName": "icon_experimental_generic",
+      "Economy": {
+        "BuildTime": 20000,
+        "BuildCostEnergy": 350000,
+        "BuildCostMass": 28000
       },
       "Intel": {
         "WaterVisionRadius": 32,
@@ -47336,11 +47343,7 @@
         "Level4": 120,
         "Level5": 150
       },
-      "Economy": {
-        "BuildTime": 20000,
-        "BuildCostEnergy": 350000,
-        "BuildCostMass": 28000
-      },
+      "Description": "Experimental Assault Tank",
       "Display": {
         "Abilities": [
           "Hover",
@@ -47352,7 +47355,8 @@
       "Weapon": [
         {
           "DamageRadius": 1,
-          "RateOfFire": 3,
+          "RateOfFire": 3.3333333333333,
+          "TurretYaw": 0,
           "RackBones": [
             {
               "MuzzleBones": [
@@ -47381,8 +47385,7 @@
           "MuzzleSalvoSize": 1,
           "FiringTolerance": 0,
           "TurretYawSpeed": 100,
-          "ProjectilesPerOnFire": 1,
-          "TurretYaw": 0
+          "ProjectilesPerOnFire": 1
         },
         {
           "Damage": 4000,
@@ -47396,11 +47399,11 @@
     {
       "Categories": [
         "ANTIAIR",
-        "BUILTBYTIER3ENGINEER",
         "BUILTBYTIER3COMMANDER",
+        "BUILTBYTIER3ENGINEER",
         "CQUEMOV",
-        "DRAGBUILD",
         "DIRECTFIRE",
+        "DRAGBUILD",
         "EXPERIMENTAL",
         "HOVER",
         "LAND",
@@ -47626,14 +47629,15 @@
           "NukeInnerRingRadius": 30,
           "NukeOuterRingDamage": 500,
           "MaxRadius": 410,
+          "NukeInnerRingDamage": 40000,
           "NukeOuterRingRadius": 40,
           "Damage": 0,
           "DamageType": "BlackholeDamage",
           "TurretPitch": 0,
-          "NukeInnerRingDamage": 40000,
-          "NukeWeapon": true,
-          "DisplayName": "Strategic Missile",
           "FiringTolerance": 180,
+          "DisplayName": "Strategic Missile",
+          "TurretPitchSpeed": 0,
+          "NukeWeapon": true,
           "ManualFire": 1,
           "ProjectilesPerOnFire": 1,
           "RackBones": [
@@ -47668,7 +47672,6 @@
               ]
             }
           ],
-          "MinRadius": 100,
           "TurretYawSpeed": 0,
           "WeaponCategory": "Missile",
           "ProjectileId": "/projectiles/NStrategicMissile2/NStrategicMissile2_proj.bp",
@@ -47678,8 +47681,8 @@
           "RackSalvoReloadTime": 0,
           "MuzzleSalvoDelay": 0,
           "MuzzleSalvoSize": 1,
-          "TurretPitchRange": 0,
-          "TurretPitchSpeed": 0
+          "MinRadius": 100,
+          "TurretPitchRange": 0
         },
         {
           "Damage": 5000,
@@ -47709,25 +47712,25 @@
     },
     {
       "Categories": [
-        "SELECTABLE",
-        "BUILTBYTIER3ENGINEER",
-        "BUILTBYTIER3COMMANDER",
-        "NOMADS",
-        "DRAGBUILD",
-        "MOBILE",
         "AIR",
-        "NEEDMOBILEBUILD",
+        "ANTIAIR",
+        "BUILTBYTIER3COMMANDER",
+        "BUILTBYTIER3ENGINEER",
+        "CANNOTUSEAIRSTAGING",
+        "CANTRANSPORTCOMMANDER",
+        "CQUEMOV",
+        "DRAGBUILD",
         "EXPERIMENTAL",
+        "MOBILE",
+        "NEEDMOBILEBUILD",
+        "NOMADS",
+        "OVERLAYANTIAIR",
+        "SELECTABLE",
+        "SNIPEMODE",
         "TRANSPORTATION",
         "TRANSPORTFOCUS",
-        "CANTRANSPORTCOMMANDER",
-        "ANTIAIR",
-        "VISIBLETORECON",
-        "OVERLAYANTIAIR",
-        "CANNOTUSEAIRSTAGING",
         "UNSTUNABLE",
-        "CQUEMOV",
-        "SNIPEMODE",
+        "VISIBLETORECON",
         "RULEUTL_Experimental"
       ],
       "StrategicIconName": "icon_experimental_generic",
@@ -47828,7 +47831,7 @@
         },
         {
           "DamageRadius": 1.5,
-          "RateOfFire": 0.28,
+          "RateOfFire": 0.27777777777778,
           "ProjectilesPerOnFire": 6,
           "TurretYaw": 0,
           "RackBones": [
@@ -47901,8 +47904,8 @@
         "MOBILE",
         "NOMADS",
         "OVERLAYDIRECTFIRE",
-        "SELECTABLE",
         "SATELLITE",
+        "SELECTABLE",
         "SNIPEMODE",
         "UNTARGETABLE",
         "VISIBLETORECON",
@@ -48210,7 +48213,7 @@
           "WeaponCategory": "Direct Fire"
         },
         {
-          "RateOfFire": 0.3,
+          "RateOfFire": 0.3030303030303,
           "TurretYaw": 0,
           "RackBones": [
             {
@@ -48338,6 +48341,9 @@
         "Icon": "land",
         "UnitName": "Countdown"
       },
+      "Physics": {
+        "TurnRate": 0
+      },
       "Economy": {
         "BuildTime": 300000,
         "BuildRate": 2000,
@@ -48355,9 +48361,6 @@
       "Wreckage": {
         "HealthMult": 0.9,
         "MassMult": 0.9
-      },
-      "Physics": {
-        "TurnRate": 0
       },
       "Display": {},
       "BuildIconSortPriority": 140
