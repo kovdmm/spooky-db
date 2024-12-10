@@ -1,5 +1,5 @@
 {
-  "version": "3815",
+  "version": "3816",
   "units": [
     {
       "Categories": [
@@ -32699,7 +32699,7 @@
       "BuildIconSortPriority": 30,
       "Description": "Gunship",
       "Economy": {
-        "BuildTime": 3300,
+        "BuildTime": 2700,
         "BuildCostEnergy": 10000,
         "BuildCostMass": 500
       },

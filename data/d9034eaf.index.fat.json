@@ -1,5 +1,5 @@
 {
-  "version": "3815",
+  "version": "3816",
   "units": [
     {
       "Categories": [
@@ -101941,7 +101941,7 @@
       "LifeBarHeight": 0.075,
       "SelectionThickness": 0.37,
       "Economy": {
-        "BuildTime": 3300,
+        "BuildTime": 2700,
         "BuildCostEnergy": 10000,
         "BuildCostMass": 500
       },
