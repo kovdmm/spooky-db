@@ -36,7 +36,7 @@ jobs:
             - name: Checkout spooky db code
               uses: actions/checkout@v4
               with:
-                  repository: kovdmm/spooky-db
+                  repository: gapforever2/spooky-db
                   ref: master
 
             - name: Remove existing unit information
